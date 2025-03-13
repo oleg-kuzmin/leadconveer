@@ -7,7 +7,8 @@
 
   // Fonts
   --main-font: 'Inter';
-  --secondary-font: 'Helvetica', 'Arial', sans-serif;
+  --secondary-font: 'Montserrat';
+  --fallback-font: 'Helvetica', 'Arial', sans-serif;
 
   // Time
   --time-hover: 300ms;
@@ -16,7 +17,7 @@
 body {
   background-color: var(--white);
   color: var(--black);
-  font-family: var(--main-font), var(--secondary-font);
+  font-family: var(--main-font), var(--secondary-font), var(--fallback-font);
 }
 
 html {
