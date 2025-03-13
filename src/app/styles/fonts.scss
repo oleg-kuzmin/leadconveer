@@ -304,7 +304,16 @@
   font-display: swap;
 }
 
-// Inter Kollektif (400)
+// Kollektif Bold (700)
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: url('/leadconveer/fonts/Kollektif-Bold.woff2') format('woff2');
+  font-family: 'Kollektif';
+  font-display: swap;
+}
+
+// Kollektif Regular (400)
 @font-face {
   font-style: normal;
   font-weight: 400;

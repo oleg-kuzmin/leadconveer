@@ -1,3 +1,40 @@
+// Figma mixins
+@mixin font-H1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+  font-family: var(--second-family);
+}
+
+@mixin font-H2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  font-family: var(--second-family);
+}
+
+@mixin font-H3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  font-family: var(--font-family);
+}
+
+@mixin font-txt {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  font-family: var(--font-family);
+}
+
+@mixin font-button {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  font-family: var(--third-family);
+}
+
+// Adaptive mixins
 @mixin font-apadtive-size($_minWidth, $_maxWidth, $_minFontSize, $_maxFontSize) {
   font-size: calc(
     #{$_minFontSize + px} + calc($_maxFontSize - $_minFontSize) *
@@ -5,10 +42,20 @@
   );
 }
 
-@mixin font-extrabold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+// Weight mixins
+@mixin font-black($_fontFamily, $_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 900;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  font-family: $_fontFamily;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-extrabold($_fontFamily, $_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
   font-weight: 800;
   font-size: $_fontSize;
   line-height: $_lineHeight;
+  font-family: $_fontFamily;
   letter-spacing: $_letterSpacing;
 }
 
@@ -16,6 +63,7 @@
   font-weight: 700;
   font-size: $_fontSize;
   line-height: $_lineHeight;
+  font-family: $_fontFamily;
   letter-spacing: $_letterSpacing;
 }
 
@@ -23,6 +71,15 @@
   font-weight: 600;
   font-size: $_fontSize;
   line-height: $_lineHeight;
+  font-family: $_fontFamily;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-medium($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 500;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  font-family: $_fontFamily;
   letter-spacing: $_letterSpacing;
 }
 
@@ -30,5 +87,30 @@
   font-weight: 400;
   font-size: $_fontSize;
   line-height: $_lineHeight;
+  font-family: $_fontFamily;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-light($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 300;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  font-family: $_fontFamily;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-extraLight($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 200;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  font-family: $_fontFamily;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-thin($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 100;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  font-family: $_fontFamily;
   letter-spacing: $_letterSpacing;
 }
