@@ -1,0 +1,16 @@
+@use '@/shared/mixins' as *;
+
+.HeroTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  min-height: 88px;
+  padding: 20px 14px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: var(--white);
+  color: var(--grey);
+  text-align: center;
+  @include font-regular(20px, 120%);
+}

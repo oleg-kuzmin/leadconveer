@@ -22,3 +22,18 @@
     }
   }
 }
+
+@mixin effect-hover-MainButton {
+  transition: background-color var(--time-hover);
+  &:active {
+    background-color: var(--dark-orange);
+  }
+  @media screen and (hover: hover) {
+    &:hover {
+      background-color: var(--light-orange);
+    }
+    &:active {
+      background-color: var(--dark-orange);
+    }
+  }
+}

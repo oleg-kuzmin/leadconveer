@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.HeroTitle {
+  width: 800px;
+  color: var(--dark-grey);
+  @include font-figma-H1;
+}

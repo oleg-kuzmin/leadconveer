@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.Smile {
+  width: 72px;
+  height: 72px;
+  background-image: url('/leadconveer/svg/smile-money.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.HeroSubtitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,19 @@
+@use '@/shared/mixins' as *;
+
+.Star {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &_Icon_1 {
+    width: 60px;
+    height: 60px;
+    background-image: url('/leadconveer/svg/star-1.svg');
+  }
+
+  &_Icon_2 {
+    width: 62px;
+    height: 62px;
+    background-image: url('/leadconveer/svg/star-2.svg');
+  }
+}
