@@ -1,5 +1,10 @@
 import './styles/index.scss';
+import { HomePage } from '@/pages/HomePage';
 
 export function App() {
-  return <h1>Hello Next</h1>;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }
