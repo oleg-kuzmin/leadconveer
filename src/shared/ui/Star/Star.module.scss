@@ -1,6 +1,7 @@
 @use '@/shared/mixins' as *;
 
 .Star {
+  flex-shrink: 0;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,5 +16,11 @@
     width: 62px;
     height: 62px;
     background-image: url('/leadconveer/svg/star-2.svg');
+  }
+
+  &_Icon_4 {
+    width: 44px;
+    height: 44px;
+    background-image: url('/leadconveer/svg/star-4.svg');
   }
 }

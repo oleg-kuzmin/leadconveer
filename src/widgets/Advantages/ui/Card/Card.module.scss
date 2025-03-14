@@ -1,0 +1,27 @@
+@use '@/shared/mixins' as *;
+
+.Card {
+  position: relative;
+  width: 880px;
+  min-height: 349px;
+  border-radius: 30px;
+  background-color: var(--light-grey);
+
+  &__Description {
+    max-width: 466px;
+    padding: 60px 0 0 40px;
+  }
+
+  &__Header {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+
+  &__Image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

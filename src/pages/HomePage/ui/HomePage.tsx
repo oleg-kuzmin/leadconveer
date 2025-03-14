@@ -39,9 +39,6 @@ export function HomePage() {
 }
 
 /*
-Header
-Hero
-Advantages
 PricingPlans
 AdditionalServices
 Clients

@@ -1,0 +1,6 @@
+@use '@/shared/mixins' as *;
+
+.CardSubtitle {
+  color: var(--grey);
+  @include font-figma-txt(120%);
+}

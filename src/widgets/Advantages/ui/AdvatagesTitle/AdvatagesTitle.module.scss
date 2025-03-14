@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.AdvatagesTitle {
+  width: 997px;
+  color: var(--dark-grey);
+  text-align: center;
+  @include font-figma-H2;
+}
