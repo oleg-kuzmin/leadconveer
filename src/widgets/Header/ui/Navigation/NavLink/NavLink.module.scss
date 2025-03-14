@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.NavLink {
+  color: var(--white);
+  @include font-figma-txt;
+  @include effect-hover-NavLink;
+}

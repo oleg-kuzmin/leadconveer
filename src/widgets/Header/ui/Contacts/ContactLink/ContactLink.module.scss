@@ -1,0 +1,20 @@
+@use '@/shared/mixins' as *;
+
+.ContactLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  vertical-align: top;
+
+  &_Whatsapp {
+    background-image: url('/leadconveer/svg/whatsapp-icon.svg');
+  }
+
+  &_Telegram {
+    background-image: url('/leadconveer/svg/telegram-icon.svg');
+  }
+}

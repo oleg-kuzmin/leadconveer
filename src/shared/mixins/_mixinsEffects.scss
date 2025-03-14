@@ -13,3 +13,12 @@
     }
   }
 }
+
+@mixin effect-hover-NavLink {
+  transition: color var(--time-hover);
+  @media screen and (hover: hover) {
+    &:hover {
+      color: var(--grey2);
+    }
+  }
+}

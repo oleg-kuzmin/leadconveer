@@ -1,0 +1,1 @@
+export { ContactTel } from './ContactTel';

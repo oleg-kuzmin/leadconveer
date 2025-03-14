@@ -1,0 +1,6 @@
+@use '@/shared/mixins' as *;
+
+.ContactTel {
+  color: var(--white);
+  @include font-figma-H3;
+}

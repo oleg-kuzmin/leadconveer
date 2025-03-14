@@ -1,0 +1,6 @@
+@use '@/shared/mixins' as *;
+
+.Logo {
+  object-fit: cover;
+  vertical-align: top;
+}

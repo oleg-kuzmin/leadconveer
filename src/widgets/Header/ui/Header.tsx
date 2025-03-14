@@ -1,4 +1,7 @@
 import cn from 'classnames';
+import { Contacts } from './Contacts';
+import { Logo } from './Logo';
+import { Navigation } from './Navigation';
 import styles from './Header.module.scss';
 
 interface HeaderProps {
@@ -7,6 +10,10 @@ interface HeaderProps {
 
 export function Header({ className }: Readonly<HeaderProps>) {
   return (
-    <div className={cn(styles.Header, className)}></div>
+    <header className={cn(styles.Header, className)}>
+      {/* <Logo /> */}
+      {/* <Navigation /> */}
+      {/* <Contacts /> */}
+    </header>
   );
 }

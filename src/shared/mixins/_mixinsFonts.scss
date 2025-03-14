@@ -1,33 +1,33 @@
 // Figma mixins
-@mixin font-H1 {
+@mixin font-figma-H1 {
   font-weight: 700;
   font-size: 80px;
   line-height: 1;
   font-family: var(--second-family);
 }
 
-@mixin font-H2 {
+@mixin font-figma-H2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 52px;
   font-family: var(--second-family);
 }
 
-@mixin font-H3 {
+@mixin font-figma-H3 {
   font-weight: 400;
   font-size: 32px;
   line-height: 1;
   font-family: var(--font-family);
 }
 
-@mixin font-txt {
+@mixin font-figma-txt {
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   font-family: var(--font-family);
 }
 
-@mixin font-button {
+@mixin font-figma-button {
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
