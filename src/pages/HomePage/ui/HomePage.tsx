@@ -39,7 +39,6 @@ export function HomePage() {
 }
 
 /*
-Reviews
 LeadTechnology
 RegistrationFirst
 HowItWorks

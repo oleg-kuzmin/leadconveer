@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import { SectionSubtitle, SectionTitle } from '@/shared/ui';
 import { ReviewCard } from './ReviewCard';
+import { ReviewVideo } from './ReviewVideo';
 import styles from './Reviews.module.scss';
 
 interface ReviewsProps {
@@ -34,6 +35,7 @@ export function Reviews({ className }: Readonly<ReviewsProps>) {
         text="«С вашей компанией работаем более 2‑х лет, сотрудничество полезное. Мы все посмотрели, разобрались, что сервис даёт реально целевые заявки. Заключили контракт на 23 000 рублей, окупилось. Понравилась технология, она помогает нам получать лиды»."
         alcove="Ниша: банкротство, списание долгов"
       /> */}
+      {/* <ReviewVideo caption="Отзыв 1: название" /> */}
     </section>
   );
 }

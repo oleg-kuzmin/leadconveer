@@ -1,0 +1,60 @@
+@use '@/shared/mixins' as *;
+
+.ReviewVideo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  &__PauseButton {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    margin: 125px auto 0;
+    background-image: url('/leadconveer/svg/video-pause-icon.svg');
+    background-position: center;
+    background-size: 53px 62px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity var(--time-hover);
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__PlayButton {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    margin: 125px auto 0;
+    background-image: url('/leadconveer/svg/video-play-icon.svg');
+    background-position: right;
+    background-size: 53px 62px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: opacity var(--time-hover);
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__Video {
+    width: 580px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 40px;
+    background-color: var(--dark-grey);
+  }
+
+  &__Caption {
+    padding-top: 15px;
+    color: var(--dark-grey);
+    @include font-figma-txt;
+  }
+}
