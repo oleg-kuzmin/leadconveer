@@ -1,0 +1,16 @@
+@use '@/shared/mixins' as *;
+
+.CardPrice {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  &__Span {
+    color: var(--dark-grey);
+    @include font-figma-txt;
+  }
+
+  &__Text {
+    @include font-bold(36px, 100%, 'Montserrat');
+  }
+}

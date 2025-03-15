@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.CardTitle {
+  max-width: 534px;
+  color: var(--dark-grey);
+  @include font-bold(36px, 42px, 'Montserrat');
+}

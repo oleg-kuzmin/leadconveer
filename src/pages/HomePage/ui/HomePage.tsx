@@ -39,8 +39,6 @@ export function HomePage() {
 }
 
 /*
-PricingPlans
-AdditionalServices
 Clients
 Reviews
 LeadTechnology

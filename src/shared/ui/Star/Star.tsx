@@ -2,7 +2,7 @@ import cn from 'classnames';
 import styles from './Star.module.scss';
 
 interface StarProps {
-  icon: '1' | '1-black' | '1-white' | '2' | '4';
+  icon: '1' | '1-black' | '1-white' | '2' | '4' | '5';
   className?: string;
 }
 
@@ -24,6 +24,9 @@ export function Star({ icon, className }: Readonly<StarProps>) {
       break;
     case '4':
       classIcon = styles.Star_Icon_4;
+      break;
+    case '5':
+      classIcon = styles.Star_Icon_5;
       break;
     default:
       classIcon = '';
