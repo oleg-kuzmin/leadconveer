@@ -1,0 +1,15 @@
+@use '@/shared/mixins' as *;
+
+.CardHeader {
+  display: flex;
+  justify-content: space-between;
+
+  &__Rating {
+    @include font-bold(36px, 52px, 'Montserrat');
+  }
+
+  &__Stars {
+    display: flex;
+    gap: 6px;
+  }
+}

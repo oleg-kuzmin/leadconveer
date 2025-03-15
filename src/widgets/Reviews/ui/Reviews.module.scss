@@ -1,5 +1,11 @@
 @use '@/shared/mixins' as *;
 
 .Reviews {
-  
+  &__Title {
+    padding-bottom: 20px;
+  }
+
+  &__Subtitle {
+    max-width: 791px;
+  }
 }

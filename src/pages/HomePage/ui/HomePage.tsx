@@ -39,7 +39,6 @@ export function HomePage() {
 }
 
 /*
-Clients
 Reviews
 LeadTechnology
 RegistrationFirst

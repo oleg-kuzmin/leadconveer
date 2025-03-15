@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.ReviewCard {
+  width: 430px;
+  min-height: 636px;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: var(--light-grey);
+
+  &__Header {
+    padding-bottom: 20px;
+  }
+
+  &__Text {
+    padding-bottom: 20px;
+  }
+}
