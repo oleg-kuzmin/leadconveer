@@ -1,5 +1,12 @@
 @use '@/shared/mixins' as *;
 
 .Clients {
-  
+  &__Title {
+    max-width: 1024px;
+    padding-bottom: 20px;
+  }
+
+  &__Subtitle {
+    max-width: 637px;
+  }
 }

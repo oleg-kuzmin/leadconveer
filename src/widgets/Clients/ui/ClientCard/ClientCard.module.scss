@@ -1,0 +1,16 @@
+@use '@/shared/mixins' as *;
+
+.ClientCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: var(--light-grey);
+
+  &__Image {
+    object-fit: contain;
+    vertical-align: top;
+  }
+}
