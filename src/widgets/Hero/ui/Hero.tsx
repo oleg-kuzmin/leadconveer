@@ -15,8 +15,8 @@ interface HeroProps {
 export function Hero({ className }: Readonly<HeroProps>) {
   return (
     <section className={cn(styles.Hero, className)}>
-      {/* <Star icon="1" /> */}
-      {/* <Star icon="2" /> */}
+      {/* <Star icon="hero1" /> */}
+      {/* <Star icon="hero2" /> */}
       {/* <HeroImage /> */}
       {/* <HeroTitle /> */}
       {/* <HeroSubtitleContainer /> */}

@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { SectionSubtitle, SectionTitle, Star } from '@/shared/ui';
-import { Card } from './Card';
+import { PricingPlanCard } from './PricingPlanCard';
 import { CardDescription } from './CardDescription';
 import { CardHeader } from './CardHeader';
 import { CardLabel } from './CardLabel';
@@ -21,14 +21,14 @@ export function PricingPlans({ className }: Readonly<PricingPlansProps>) {
       {/* <SectionSubtitle className={styles.PricingPlans__Subtitle}>
         Оптимальные тарифы и цены на получение готовых Лидов и заявок с вашего сайта, без переплаты и абонентской платы
       </SectionSubtitle> */}
-      {/* <Card
+      {/* <PricingPlanCard
         name="Старт"
         title="50 готовых лидов"
         price="22 500"
         description="Стартовый пакет для тех, кто хочет купить Лидов со своего сайта и повысить свои продажи"
         features={['50 Лидов', '450 ₽ за один Лид', 'Получение за 5–7 дней']}
       /> */}
-      {/* <Card
+      {/* <PricingPlanCard
         name="Стандарт"
         title="100 готовых лидов"
         price="40 000"
@@ -41,7 +41,7 @@ export function PricingPlans({ className }: Readonly<PricingPlansProps>) {
         ]}
         invert
       /> */}
-      {/* <Card
+      {/* <PricingPlanCard
         name="Премиум"
         title="300 готовых лидов"
         price="90 000"

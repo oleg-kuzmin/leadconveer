@@ -2,7 +2,21 @@ import cn from 'classnames';
 import styles from './Star.module.scss';
 
 interface StarProps {
-  icon: '1' | '1-black' | '1-white' | '2' | '4' | '5';
+  icon:
+    | 'hero1'
+    | 'hero2'
+    | 'advantageCard'
+    | 'pricingPlanCard'
+    | 'pricingPlanCardInvert'
+    | 'additionalServiceCard'
+    | 'reviewCard'
+    | 'technology1'
+    | 'technology2'
+    | 'registrationFirst'
+    | 'featureCard'
+    | 'registrationSecond1'
+    | 'registrationSecond2'
+    | 'newEra';
   className?: string;
 }
 
@@ -10,23 +24,47 @@ export function Star({ icon, className }: Readonly<StarProps>) {
   let classIcon: string;
 
   switch (icon) {
-    case '1':
-      classIcon = styles.Star_Icon_1;
+    case 'hero1':
+      classIcon = styles.Star_Hero1;
       break;
-    case '1-black':
-      classIcon = styles.Star_Icon_1Black;
+    case 'hero2':
+      classIcon = styles.Star_Hero2;
       break;
-    case '1-white':
-      classIcon = styles.Star_Icon_1White;
+    case 'advantageCard':
+      classIcon = styles.Star_AdvantageCard;
       break;
-    case '2':
-      classIcon = styles.Star_Icon_2;
+    case 'pricingPlanCard':
+      classIcon = styles.Star_PricingPlanCard;
       break;
-    case '4':
-      classIcon = styles.Star_Icon_4;
+    case 'pricingPlanCardInvert':
+      classIcon = styles.Star_PricingPlanCardInvert;
       break;
-    case '5':
-      classIcon = styles.Star_Icon_5;
+    case 'additionalServiceCard':
+      classIcon = styles.Star_AdditionalServiceCard;
+      break;
+    case 'reviewCard':
+      classIcon = styles.Star_ReviewCard;
+      break;
+    case 'technology1':
+      classIcon = styles.Star_Technology1;
+      break;
+    case 'technology2':
+      classIcon = styles.Star_Technology2;
+      break;
+    case 'registrationFirst':
+      classIcon = styles.Star_RegistrationFirst;
+      break;
+    case 'featureCard':
+      classIcon = styles.Star_FeatureCard;
+      break;
+    case 'registrationSecond1':
+      classIcon = styles.Star_RegistrationSecond1;
+      break;
+    case 'registrationSecond2':
+      classIcon = styles.Star_RegistrationSecond2;
+      break;
+    case 'newEra':
+      classIcon = styles.Star_NewEra;
       break;
     default:
       classIcon = '';

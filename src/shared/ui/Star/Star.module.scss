@@ -6,39 +6,87 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  &_Icon_1 {
+  &_Hero1 {
     width: 60px;
     height: 60px;
-    background-image: url('/leadconveer/svg/star-1.svg');
+    background-image: url('/leadconveer/svg/star-hero1.svg');
   }
 
-  &_Icon_1Black {
-    width: 56px;
-    height: 56px;
-    background-image: url('/leadconveer/svg/star-1-black.svg');
-  }
-
-  &_Icon_1White {
-    width: 56px;
-    height: 56px;
-    background-image: url('/leadconveer/svg/star-1-white.svg');
-  }
-
-  &_Icon_2 {
+  &_Hero2 {
     width: 62px;
     height: 62px;
-    background-image: url('/leadconveer/svg/star-2.svg');
+    background-image: url('/leadconveer/svg/star-hero2.svg');
   }
 
-  &_Icon_4 {
+  &_AdvantageCard {
     width: 44px;
     height: 44px;
-    background-image: url('/leadconveer/svg/star-4.svg');
+    background-image: url('/leadconveer/svg/star-advantage-card.svg');
   }
 
-  &_Icon_5 {
+  &_PricingPlanCard {
+    width: 56px;
+    height: 56px;
+    background-image: url('/leadconveer/svg/star-pricing-plan-card.svg');
+  }
+
+  &_PricingPlanCardInvert {
+    width: 56px;
+    height: 56px;
+    background-image: url('/leadconveer/svg/star-pricing-plan-card-invert.svg');
+  }
+
+  &_AdditionalServiceCard {
     width: 48px;
     height: 48px;
-    background-image: url('/leadconveer/svg/star-5.svg');
+    background-image: url('/leadconveer/svg/star-additional-service-card.svg');
+  }
+
+  &_Star_Icon_ReviewCard {
+    width: 49px;
+    height: 49px;
+    background-image: url('/leadconveer/svg/star-review-card.svg');
+  }
+
+  &_Technology1 {
+    width: 72px;
+    height: 72px;
+    background-image: url('/leadconveer/svg/star-technology1.svg');
+  }
+
+  &_Technology1 {
+    width: 57px;
+    height: 57px;
+    background-image: url('/leadconveer/svg/star-technology2.svg');
+  }
+
+  &_RegistrationFirst {
+    width: 88px;
+    height: 89px;
+    background-image: url('/leadconveer/svg/star-registration-first.svg');
+  }
+
+  &_FeatureCard {
+    width: 60px;
+    height: 60px;
+    background-image: url('/leadconveer/svg/star-feature-card.svg');
+  }
+
+  &_RegistrationSecond1 {
+    width: 68px;
+    height: 70px;
+    background-image: url('/leadconveer/svg/star-registration-second-1.svg');
+  }
+
+  &_RegistrationSecond2 {
+    width: 66px;
+    height: 68px;
+    background-image: url('/leadconveer/svg/star-registration-second-2.svg');
+  }
+
+  &_NewEra {
+    width: 57px;
+    height: 57px;
+    background-image: url('/leadconveer/svg/star-new-era.svg');
   }
 }

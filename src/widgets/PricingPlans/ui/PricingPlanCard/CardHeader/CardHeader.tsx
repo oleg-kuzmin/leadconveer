@@ -13,7 +13,7 @@ export function CardHeader({ name, invert = false, className }: Readonly<CardHea
   return (
     <div className={cn(styles.CardHeader, className)}>
       <CardLabel text={name} invert={invert} />
-      {invert ? <Star icon="1-white" /> : <Star icon="1-black" />}
+      {invert ? <Star icon="pricingPlanCardInvert" /> : <Star icon="pricingPlanCard" />}
     </div>
   );
 }
