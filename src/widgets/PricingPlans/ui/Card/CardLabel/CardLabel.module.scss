@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.CardLabel {
+  width: max-content;
+  padding: 12px 19px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 20px;
+  color: var(--dark-grey);
+  @include font-figma-H3;
+
+  &_Invert {
+    border-color: var(--white);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+  }
+}

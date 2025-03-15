@@ -1,0 +1,19 @@
+@use '@/shared/mixins' as *;
+
+.CardFeature {
+  position: relative;
+  left: -2px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: var(--dark-grey);
+  @include font-figma-txt(120%);
+
+  &_Bold {
+    @include font-figma-txt-bold(120%);
+  }
+
+  &_Invert {
+    color: var(--white);
+  }
+}

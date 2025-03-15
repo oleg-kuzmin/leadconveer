@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.CardTitle {
+  color: var(--dark-grey);
+  @include font-bold(36px, 42px, 'Montserrat');
+
+  &_Invert {
+    color: var(--white);
+  }
+}

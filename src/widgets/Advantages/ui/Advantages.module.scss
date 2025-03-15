@@ -1,5 +1,7 @@
 @use '@/shared/mixins' as *;
 
 .Advantages {
-  
+  &__Title {
+    max-width: 997px;
+  }
 }

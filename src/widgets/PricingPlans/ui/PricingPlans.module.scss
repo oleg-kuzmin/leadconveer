@@ -1,5 +1,11 @@
 @use '@/shared/mixins' as *;
 
 .PricingPlans {
-  
+  &__Title {
+    max-width: 784px;
+  }
+
+  &__Subtitle {
+    max-width: 1084px;
+  }
 }
