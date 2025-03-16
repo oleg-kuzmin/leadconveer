@@ -1,5 +1,17 @@
 @use '@/shared/mixins' as *;
 
 .RegistrationSecond {
-  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 0;
+  gap: 43px;
+  border-radius: 40px;
+  background-color: var(--dark-grey);
+
+  &__SectionTitle {
+    padding-bottom: 40px;
+    color: var(--white);
+    text-align: left;
+  }
 }
