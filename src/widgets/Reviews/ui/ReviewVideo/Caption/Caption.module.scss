@@ -1,0 +1,6 @@
+@use '@/shared/mixins' as *;
+
+.Caption {
+  color: var(--dark-grey);
+  @include font-figma-txt;
+}

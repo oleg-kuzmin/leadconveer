@@ -37,3 +37,12 @@
     }
   }
 }
+
+@mixin effect-hover-VideoButton {
+  @media screen and (hover: hover) {
+    transition: opacity var(--time-hover);
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
