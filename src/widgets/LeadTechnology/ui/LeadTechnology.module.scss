@@ -1,5 +1,6 @@
 @use '@/shared/mixins' as *;
 
 .LeadTechnology {
-  
+  display: flex;
+  gap: 60px;
 }

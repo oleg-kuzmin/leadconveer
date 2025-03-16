@@ -1,0 +1,12 @@
+@use '@/shared/mixins' as *;
+
+.Header {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+
+  &__SectionTitle {
+    max-width: 434px;
+    text-align: left;
+  }
+}

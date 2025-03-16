@@ -39,7 +39,6 @@ export function HomePage() {
 }
 
 /*
-LeadTechnology
 RegistrationFirst
 HowItWorks
 VideoPresentaion
