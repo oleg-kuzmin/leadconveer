@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.BackgroundImage {
+  position: relative;
+  width: 683px;
+  height: 403px;
+  background-image: url('/leadconveer/images/registration-first-x2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__Star {
+    position: absolute;
+    bottom: 5px;
+    left: 24px;
+  }
+}

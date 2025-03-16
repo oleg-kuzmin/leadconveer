@@ -14,7 +14,7 @@ export function LeadTechnology({ className }: Readonly<LeadTechnologyProps>) {
 
   return (
     <section className={styles.LeadTechnology + externalClass}>
-      <BackgroundImage />
+      {/* <BackgroundImage />
       <Content>
         <Header />
         <Text>
@@ -30,7 +30,7 @@ export function LeadTechnology({ className }: Readonly<LeadTechnologyProps>) {
             Вы платите только за результат — за полученных Лидов (заявки) на свои услуги или товары.
           </Paragraph>
         </Text>
-      </Content>
+      </Content> */}
     </section>
   );
 }
