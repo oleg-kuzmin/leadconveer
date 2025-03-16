@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.SlideStep {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}

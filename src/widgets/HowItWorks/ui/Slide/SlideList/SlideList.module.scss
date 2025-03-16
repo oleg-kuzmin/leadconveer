@@ -1,0 +1,22 @@
+@use '@/shared/mixins' as *;
+
+.SlideList {
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  gap: 20px;
+
+  &_OrderedList {
+    width: 695px;
+    list-style: decimal;
+  }
+
+  &__Item {
+    padding-left: 1px;
+  }
+
+  &__Item::marker {
+    color: var(--dark-grey);
+    @include font-figma-txt;
+  }
+}

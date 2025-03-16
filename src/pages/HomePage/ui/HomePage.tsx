@@ -39,11 +39,9 @@ export function HomePage() {
 }
 
 /*
-RegistrationFirst
 HowItWorks
 VideoPresentaion
 Features
-RegistrationSecond
 Faq
 NewEra
 Contacts

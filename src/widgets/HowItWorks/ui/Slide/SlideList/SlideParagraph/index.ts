@@ -1,0 +1,1 @@
+export { SlideParagraph } from './SlideParagraph';
