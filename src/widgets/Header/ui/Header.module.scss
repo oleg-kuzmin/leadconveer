@@ -1,5 +1,51 @@
 @use '@/shared/mixins' as *;
 
 .Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  min-height: 82px;
+  margin: 0 auto;
+  padding: 0 16px;
   background-color: var(--dark-grey);
+  @include media-laptop {
+    justify-content: flex-start;
+    padding: 0 32px;
+  }
+  @include media-fullHD {
+    padding: 0 30px 0 70px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  &__ButtonBurger {
+    @include media-laptop {
+      display: none;
+    }
+  }
+
+  &__Logo {
+    @include media-laptop {
+      margin-right: auto;
+    }
+  }
+
+  &__Navigation {
+    display: none;
+    @include media-laptop {
+      display: revert;
+      margin-right: auto;
+    }
+    @include media-fullHD {
+      margin-right: 230px;
+    }
+  }
+
+  &__Contacts {
+    display: none;
+    @include media-desktop {
+      display: flex;
+    }
+  }
 }

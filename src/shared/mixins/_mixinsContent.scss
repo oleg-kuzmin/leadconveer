@@ -10,3 +10,9 @@
     width: calc(100% - 224px);
   }
 }
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -19,31 +19,21 @@ export function HomePage() {
   return (
     <>
       <Header />
-      <Hero />
-      <Advantages />
-      <PricingPlans />
-      <AdditionalServices />
-      <Clients />
-      <Reviews />
-      <LeadTechnology />
-      <RegistrationFirst />
-      <HowItWorks />
-      <Features />
-      <RegistrationSecond />
-      <Faq />
-      <NewEra />
-      <Contacts />
-      <Footer />
+      {/* <Hero /> */}
+      {/* <Advantages /> */}
+      {/* <PricingPlans /> */}
+      {/* <AdditionalServices /> */}
+      {/* <Clients /> */}
+      {/* <Reviews /> */}
+      {/* <LeadTechnology /> */}
+      {/* <RegistrationFirst /> */}
+      {/* <HowItWorks /> */}
+      {/* <Features /> */}
+      {/* <RegistrationSecond /> */}
+      {/* <Faq /> */}
+      {/* <NewEra /> */}
+      {/* <Contacts /> */}
+      {/* <Footer /> */}
     </>
   );
 }
-
-/*
-HowItWorks
-VideoPresentaion
-Features
-Faq
-NewEra
-Contacts
-Footer
-*/

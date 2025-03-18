@@ -7,6 +7,7 @@
   --light-orange: #ff9832;
   --dark-orange: #cd3400;
   --white: #fff;
+  --black: #000;
   --dark-grey: #2d2d2d;
   --grey: #808080;
   --blueberry: #8a38d6;
@@ -23,14 +24,11 @@
 }
 
 body {
-  display: flex; //!
-  align-items: center; //!
-  justify-content: center; //!
-  min-width: 100vw; //!
   max-width: 1920px;
   min-height: 100vh; //!
   margin: 0 auto;
   background-color: var(--white);
+  color: var(--dark-grey);
   font-family: var(--font-family), var(--fallback-family);
 }
 

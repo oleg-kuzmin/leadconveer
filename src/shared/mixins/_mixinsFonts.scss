@@ -13,28 +13,28 @@
   font-family: var(--second-family);
 }
 
-@mixin font-figma-H3($_lineHeight: 100%) {
+@mixin font-figma-H3($_lineHeight: 121%) {
   font-weight: 400;
   font-size: 32px;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }
 
-@mixin font-figma-txt($_lineHeight: 100%) {
+@mixin font-figma-txt($_lineHeight: 121%) {
   font-weight: 400;
   font-size: 24px;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }
 
-@mixin font-figma-txt-bold($_lineHeight: 100%) {
+@mixin font-figma-txt-bold($_lineHeight: 121%) {
   font-weight: 700;
   font-size: 24px;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }
 
-@mixin font-figma-button($_lineHeight: 100%) {
+@mixin font-figma-button($_lineHeight: 121%) {
   font-weight: 600;
   font-size: 24px;
   line-height: $_lineHeight;

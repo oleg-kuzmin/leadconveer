@@ -18,8 +18,7 @@ export function ContactLink({ href, icon, className }: Readonly<ContactLinkProps
       classIcon = styles.ContactLink_Telegram;
       break;
     default:
-      classIcon = '';
-      break;
+      throw Error('ContactLink. Unknown icon.');
   }
 
   return <a className={cn(styles.ContactLink, classIcon, className)} href={href}></a>;
