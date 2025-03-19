@@ -8,8 +8,8 @@ interface HeroTitleProps {
 export function HeroTitle({ className }: Readonly<HeroTitleProps>) {
   return (
     <h1 className={cn(styles.HeroTitle, className)}>
-      <span className="accent-color">Лидогенерация</span>
-      <span> для бизнеса </span>
+      <strong className="accent-color">Лидогенерация</strong>
+      <span> для&nbsp;бизнеса </span>
     </h1>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import cn from 'classnames';
+import { Content } from '@/shared/ui';
 import { ButtonBurger } from './ButtonBurger';
 import { Contacts } from './Contacts';
 import { Logo } from './Logo';
@@ -21,14 +22,16 @@ export function Header({ className }: Readonly<HeaderProps>) {
 
   return (
     <header className={cn(styles.Header, className)}>
-      <Logo className={styles.Header__Logo} />
-      <ButtonBurger
-        className={styles.Header__ButtonBurger}
-        isActive={isActiveBurgerMenu}
-        onClick={handleClickBurgerMenu}
-      />
-      <Navigation className={styles.Header__Navigation} />
-      <Contacts className={styles.Header__Contacts} />
+      <Content className={styles.Header__Content}>
+        <Logo className={styles.Header__Logo} />
+        <ButtonBurger
+          className={styles.Header__ButtonBurger}
+          isActive={isActiveBurgerMenu}
+          onClick={handleClickBurgerMenu}
+        />
+        <Navigation className={styles.Header__Navigation} />
+        <Contacts className={styles.Header__Contacts} />
+      </Content>
     </header>
   );
 }

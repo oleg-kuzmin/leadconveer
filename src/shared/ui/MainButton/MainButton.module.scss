@@ -5,12 +5,18 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 72px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 10px;
   background-color: var(--orange-juice);
   color: var(--white);
   text-transform: uppercase;
   cursor: pointer;
-  @include font-figma-button;
+  @include font-semibold(16px);
   @include effect-hover-MainButton;
+
+  @include media-desktop {
+    height: 72px;
+    border-radius: 20px;
+    @include font-figma-button;
+  }
 }

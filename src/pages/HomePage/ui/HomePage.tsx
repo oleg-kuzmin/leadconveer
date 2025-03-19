@@ -19,7 +19,9 @@ export function HomePage() {
   return (
     <>
       <Header />
-      {/* <Hero /> */}
+      <main>
+        <Hero />
+      </main>
       {/* <Advantages /> */}
       {/* <PricingPlans /> */}
       {/* <AdditionalServices /> */}

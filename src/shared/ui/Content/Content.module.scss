@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.Content {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @include media-laptop {
+    padding: 0 32px;
+  }
+  @include media-fullHD {
+    padding: 0 70px;
+  }
+}

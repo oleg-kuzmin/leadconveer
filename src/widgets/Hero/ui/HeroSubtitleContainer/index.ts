@@ -1,1 +1,0 @@
-export { HeroSubtitleContainer } from './HeroSubtitleContainer';

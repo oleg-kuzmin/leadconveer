@@ -1,6 +1,10 @@
 @use '@/shared/mixins' as *;
 
 .HeroImage {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 791px;
   object-fit: contain;
   vertical-align: top;
 }

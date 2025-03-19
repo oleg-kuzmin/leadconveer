@@ -1,7 +1,0 @@
-@use '@/shared/mixins' as *;
-
-.HeroSubtitle {
-  width: 525px;
-  color: var(--dark-grey);
-  @include font-figma-H3(120%);
-}

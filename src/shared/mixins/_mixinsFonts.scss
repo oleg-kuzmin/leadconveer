@@ -1,3 +1,11 @@
+// Apadtive size
+@mixin font-apadtive-size($_minFontSize, $_maxFontSize, $_minWidth, $_maxWidth) {
+  font-size: calc(
+    #{$_minFontSize + px} + calc($_maxFontSize - $_minFontSize) *
+      ((100vw - #{$_minWidth + px}) / calc($_maxWidth - $_minWidth))
+  );
+}
+
 // Figma mixins
 @mixin font-figma-H1($_lineHeight: 100%) {
   font-weight: 700;
@@ -41,16 +49,8 @@
   font-family: var(--font-family);
 }
 
-// Adaptive mixins
-@mixin font-apadtive-size($_minWidth, $_maxWidth, $_minFontSize, $_maxFontSize) {
-  font-size: calc(
-    #{$_minFontSize + px} + calc($_maxFontSize - $_minFontSize) *
-      ((100vw - #{$_minWidth + px}) / calc($_maxWidth - $_minWidth))
-  );
-}
-
 // Weight mixins
-@mixin font-black($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-black($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 900;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -58,7 +58,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-extrabold($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-extrabold($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 800;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -66,7 +66,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-bold($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-bold($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 700;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -74,7 +74,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-semibold($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-semibold($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 600;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -82,7 +82,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-medium($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-medium($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 500;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -90,7 +90,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-regular($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-regular($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 400;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -98,7 +98,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-light($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-light($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 300;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -106,7 +106,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-extraLight($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-extraLight($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 200;
   font-size: $_fontSize;
   line-height: $_lineHeight;
@@ -114,7 +114,7 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-thin($_fontSize, $_lineHeight: 1, $_fontFamily: 'Inter', $_letterSpacing: normal) {
+@mixin font-thin($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 100;
   font-size: $_fontSize;
   line-height: $_lineHeight;

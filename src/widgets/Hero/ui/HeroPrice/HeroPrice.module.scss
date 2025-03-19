@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.HeroPrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  @include media-desktop {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+}

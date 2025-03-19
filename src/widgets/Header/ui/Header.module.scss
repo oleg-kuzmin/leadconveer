@@ -1,22 +1,35 @@
 @use '@/shared/mixins' as *;
 
 .Header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1920px;
-  min-height: 82px;
-  margin: 0 auto;
-  padding: 0 16px;
+  position: relative;
+  width: 100%;
   background-color: var(--dark-grey);
-  @include media-laptop {
-    justify-content: flex-start;
-    padding: 0 32px;
+  &::after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-grey);
+    content: '';
   }
+
   @include media-fullHD {
-    padding: 0 30px 0 70px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
+  }
+
+  &__Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 82px;
+    @include media-laptop {
+      justify-content: flex-start;
+    }
+    @include media-fullHD {
+      padding-right: 30px;
+    }
   }
 
   &__ButtonBurger {

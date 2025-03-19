@@ -2,7 +2,7 @@ import cn from 'classnames';
 import styles from './MainButton.module.scss';
 
 interface MainButtonProps {
-  text: string;
+  text: React.ReactNode;
   className?: string;
 }
 

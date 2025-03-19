@@ -1,7 +1,12 @@
 @use '@/shared/mixins' as *;
 
 .HeroTitle {
-  width: 800px;
-  color: var(--dark-grey);
-  @include font-figma-H1;
+  max-width: 800px;
+  text-align: center;
+  @include font-bold(24px, 121%, 'Montserrat');
+  @include font-apadtive-size(24, 80, 320, 1440);
+  @include media-desktop {
+    text-align: left;
+    @include font-figma-H1;
+  }
 }
