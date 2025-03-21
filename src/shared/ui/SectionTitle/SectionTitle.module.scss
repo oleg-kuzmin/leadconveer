@@ -1,7 +1,10 @@
 @use '@/shared/mixins' as *;
 
 .SectionTitle {
-  color: var(--dark-grey);
   text-align: center;
-  @include font-figma-H2;
+  @include font-bold(24px, 121%, 'Montserrat');
+  @include font-apadtive-size(24, 48, 320, 1440);
+  @include media-desktop {
+    @include font-figma-H2;
+  }
 }

@@ -21,8 +21,8 @@ export function HomePage() {
       <Header />
       <main>
         <Hero />
+        <Advantages />
       </main>
-      {/* <Advantages /> */}
       {/* <PricingPlans /> */}
       {/* <AdditionalServices /> */}
       {/* <Clients /> */}

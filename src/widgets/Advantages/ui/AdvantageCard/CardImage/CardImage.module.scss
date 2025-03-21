@@ -1,6 +1,12 @@
 @use '@/shared/mixins' as *;
 
 .CardImage {
+  width: auto;
+  height: 150px;
   object-fit: contain;
   vertical-align: top;
+  @include media-desktop {
+    width: 364px;
+    height: 349px;
+  }
 }

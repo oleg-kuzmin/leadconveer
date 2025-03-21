@@ -1,0 +1,15 @@
+@use '@/shared/mixins' as *;
+
+.CardBg {
+  width: 170px;
+  height: 100px;
+  background-image: url('/leadconveer/images/advantages-bg-x1.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include media-desktop {
+    width: 364px;
+    height: 245px;
+    background-position: center;
+  }
+}

@@ -2,5 +2,8 @@
 
 .CardTitle {
   color: var(--dark-grey);
-  @include font-figma-H3(120%);
+  @include font-regular(24px, 121%);
+  @include media-desktop {
+    @include font-figma-H3(121%);
+  }
 }

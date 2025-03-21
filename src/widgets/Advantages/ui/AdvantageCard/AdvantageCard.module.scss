@@ -2,26 +2,58 @@
 
 .AdvantageCard {
   position: relative;
-  width: 880px;
-  min-height: 349px;
+  width: 100%;
+  max-width: 880px;
+  min-height: 150px;
+  padding: 20px;
   border-radius: 30px;
   background-color: var(--light-grey);
+  @include media-desktop {
+    min-height: 349px;
+    padding: 60px 40px 40px;
+  }
 
   &__Description {
     max-width: 466px;
-    padding: 60px 0 0 40px;
   }
 
   &__Header {
     display: flex;
     align-items: flex-start;
     padding-bottom: 20px;
-    gap: 30px;
+    gap: 10px;
+    @include media-desktop {
+      gap: 30px;
+    }
   }
 
   &__Image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    display: none;
+    @include media-tablet {
+      display: revert;
+      z-index: 1;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__Bg {
+    display: none;
+    @include media-tablet {
+      display: revert;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__Star {
+    width: 29px;
+    height: 29px;
+    @include media-desktop {
+      width: 44px;
+      height: 44px;
+    }
   }
 }

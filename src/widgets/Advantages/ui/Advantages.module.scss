@@ -1,7 +1,30 @@
 @use '@/shared/mixins' as *;
 
 .Advantages {
+  padding-top: 40px;
+  @include media-desktop {
+    padding-top: 127px;
+  }
+
   &__Title {
     max-width: 997px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    @include media-desktop {
+      padding-bottom: 38px;
+    }
+  }
+
+  &__Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__Content {
+    @include media-fullHD {
+      padding: 0;
+    }
   }
 }

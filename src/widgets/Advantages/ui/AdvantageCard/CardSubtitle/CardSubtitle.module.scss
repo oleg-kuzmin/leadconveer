@@ -2,5 +2,8 @@
 
 .CardSubtitle {
   color: var(--grey);
-  @include font-figma-txt(120%);
+  @include font-regular(16px, 121%);
+  @include media-desktop {
+    @include font-figma-txt(121%);
+  }
 }
