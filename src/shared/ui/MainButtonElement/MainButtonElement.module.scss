@@ -10,6 +10,7 @@
   text-transform: uppercase;
   cursor: pointer;
   @include effect-hover-MainButtonElement;
+  @include effect-focus-MainButtonElement;
 
   @include media-initial {
     height: 50px;

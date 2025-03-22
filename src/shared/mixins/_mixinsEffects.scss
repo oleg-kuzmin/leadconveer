@@ -1,48 +1,55 @@
-@mixin effect-focus {
-  &:focus-visible {
-    border-radius: 2px;
-    outline: var(--white) 2px solid;
-  }
-}
+// @mixin effect-focus {
+//   &:focus-visible {
+//     border-radius: 2px;
+//     outline: var(--white) 2px solid;
+//   }
+// }
 
-@mixin effect-hover {
-  @media screen and (hover: hover) {
-    transition: color var(--time-hover);
-    &:hover {
-      color: var(--white);
-    }
-  }
-}
+// @mixin effect-hover {
+//   @media screen and (hover: hover) {
+//     transition: color var(--time-hover);
+//     &:hover {
+//       color: var(--white);
+//     }
+//   }
+// }
 
-@mixin effect-hover-NavLinkElement {
-  transition: color var(--time-hover);
-  @media screen and (hover: hover) {
-    &:hover {
-      color: var(--grey2);
-    }
-  }
-}
+// @mixin effect-hover-NavLinkElement {
+//   transition: color var(--time-hover);
+//   @media screen and (hover: hover) {
+//     &:hover {
+//       color: var(--grey2);
+//     }
+//   }
+// }
 
-@mixin effect-hover-MainButtonElement {
-  transition: background-color var(--time-hover);
-  &:active {
-    background-color: var(--dark-orange);
-  }
-  @media screen and (hover: hover) {
-    &:hover {
-      background-color: var(--light-orange);
-    }
-    &:active {
-      background-color: var(--dark-orange);
-    }
-  }
-}
+// @mixin effect-hover-MainButtonElement {
+//   transition: background-color var(--time-hover);
+//   &:active {
+//     background-color: var(--dark-orange);
+//   }
+//   @media screen and (hover: hover) {
+//     &:hover {
+//       background-color: var(--light-orange);
+//     }
+//     &:active {
+//       background-color: var(--dark-orange);
+//     }
+//   }
+// }
 
-@mixin effect-hover-VideoButtonElement {
-  @media screen and (hover: hover) {
-    transition: opacity var(--time-hover);
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-}
+// @mixin effect-hover-VideoButtonElement {
+//   @media screen and (hover: hover) {
+//     transition: opacity var(--time-hover);
+//     &:hover {
+//       opacity: 0.7;
+//     }
+//   }
+// }
+
+@mixin effect-hover-NavLinkElement {};
+@mixin effect-focus-NavLinkElement {};
+@mixin effect-hover-MainButtonElement {};
+@mixin effect-focus-MainButtonElement {};
+@mixin effect-hover-ContactLinkElement {};
+@mixin effect-focus-ContactLinkElement {};

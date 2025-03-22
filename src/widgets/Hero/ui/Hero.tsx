@@ -27,9 +27,7 @@ export function Hero({ className }: Readonly<HeroProps>) {
           <MainButtonElement className={styles.Hero__Button} text="Выбрать пакет лидов" />
         </HeroText>
       </Content>
-      <Content>
-        <HeroTabs className={styles.Hero__Tabs} />
-      </Content>
+      <HeroTabs className={styles.Hero__Tabs} />
     </section>
   );
 }

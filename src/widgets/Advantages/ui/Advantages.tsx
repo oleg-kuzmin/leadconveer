@@ -1,6 +1,7 @@
 import cn from 'classnames';
-import { Content, SectionTitle } from '@/shared/ui';
+import { AccentTextElement, Content, SectionTitleElement } from '@/shared/ui';
 import { AdvantageCard } from './AdvantageCard';
+import { AdvantagesCards } from './AdvantagesCards';
 import styles from './Advantages.module.scss';
 
 interface AdvantagesProps {
@@ -11,10 +12,10 @@ export function Advantages({ className }: Readonly<AdvantagesProps>) {
   return (
     <section className={cn(styles.Advantages, className)}>
       <Content className={styles.Advantages__Content}>
-        <SectionTitle className={styles.Advantages__Title}>
-          Завалим ваш отдел продаж <span className="accent-color">целевыми&nbsp;Лидами</span>
-        </SectionTitle>
-        <div className={styles.Advantages__Cards}>
+        <SectionTitleElement className={styles.Advantages__Title}>
+          Завалим ваш отдел продаж <AccentTextElement tag="span">целевыми&nbsp;Лидами</AccentTextElement>
+        </SectionTitleElement>
+        <AdvantagesCards>
           <AdvantageCard
             title="Оплата за результат"
             text="Вы платите только за переданные и получение вами целевые Лиды — их контактные данные (телефон, Telegram, email)"
@@ -39,7 +40,7 @@ export function Advantages({ className }: Readonly<AdvantagesProps>) {
             imgSrc="/leadconveer/images/advantages-laptop-x2.png"
             imgAlt="Ноутбук"
           />
-        </div>
+        </AdvantagesCards>
       </Content>
     </section>
   );

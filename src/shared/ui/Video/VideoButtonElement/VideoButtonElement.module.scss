@@ -6,7 +6,6 @@
   background-position: right;
   background-repeat: no-repeat;
   cursor: pointer;
-  @include effect-hover-VideoButtonElement;
 
   &_Play {
     background-image: url('/leadconveer/svg/video-play-icon.svg');

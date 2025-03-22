@@ -24,7 +24,7 @@
 }
 
 body {
-  min-height: 100vh; //!
+  min-height: 100vh; //! delete
   margin: 0 auto;
   background-color: var(--white);
   color: var(--dark-grey);
@@ -44,10 +44,6 @@ button {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.accent-color {
-  color: var(--orange-juice);
 }
 
 .accent-price-color {

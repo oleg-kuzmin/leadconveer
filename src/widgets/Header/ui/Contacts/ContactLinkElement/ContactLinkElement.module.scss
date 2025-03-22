@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-color: transparent;
   vertical-align: top;
+  @include effect-hover-ContactLinkElement;
+  @include effect-focus-ContactLinkElement;
 
   &_Whatsapp {
     background-image: url('/leadconveer/svg/whatsapp-icon.svg');

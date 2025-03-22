@@ -1,9 +1,11 @@
 import cn from 'classnames';
-import { Star } from '@/shared/ui';
-import { CardBg } from './CardBg';
-import { CardImage } from './CardImage';
-import { CardSubtitle } from './CardSubtitle';
-import { CardTitle } from './CardTitle';
+import { StarElement } from '@/shared/ui';
+import { CardBgElement } from './CardBgElement';
+import { CardDescription } from './CardDescription';
+import { CardHeader } from './CardHeader';
+import { CardImageElement } from './CardImageElement';
+import { CardSubtitleElement } from './CardSubtitleElement';
+import { CardTitleElement } from './CardTitleElement';
 import styles from './AdvantageCard.module.scss';
 
 interface AdvantageCardProps {
@@ -17,15 +19,15 @@ interface AdvantageCardProps {
 export function AdvantageCard({ title, text, imgSrc, imgAlt, className }: Readonly<AdvantageCardProps>) {
   return (
     <div className={cn(styles.AdvantageCard, className)}>
-      <div className={styles.AdvantageCard__Description}>
-        <div className={styles.AdvantageCard__Header}>
-          <CardTitle text={title} />
-          <Star className={styles.AdvantageCard__Star} icon="advantageCard" />
-        </div>
-        <CardSubtitle text={text} />
-      </div>
-      <CardImage className={styles.AdvantageCard__Image} src={imgSrc} alt={imgAlt} />
-      <CardBg className={styles.AdvantageCard__Bg} />
+      <CardDescription className={styles.AdvantageCard__Description}>
+        <CardHeader className={styles.AdvantageCard__Header}>
+          <CardTitleElement text={title} />
+          <StarElement className={styles.AdvantageCard__Star} icon="advantageCard" />
+        </CardHeader>
+        <CardSubtitleElement text={text} />
+      </CardDescription>
+      <CardImageElement className={styles.AdvantageCard__ImageElement} src={imgSrc} alt={imgAlt} />
+      <CardBgElement className={styles.AdvantageCard__BgElement} />
     </div>
   );
 }

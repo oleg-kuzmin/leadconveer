@@ -1,3 +1,4 @@
+export { AccentTextElement } from './AccentTextElement';
 export { Content } from './Content';
 export { MainButtonElement } from './MainButtonElement';
 export { SectionSubtitleElement } from './SectionSubtitleElement';

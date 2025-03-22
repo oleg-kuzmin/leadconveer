@@ -9,4 +9,13 @@
       padding-top: 60px;
     }
   }
+
+  &__Advantages {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 127px;
+    }
+  }
 }
