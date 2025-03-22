@@ -20,8 +20,8 @@ export function HomePage() {
     <>
       <Header />
       <main>
-        <Hero />
-        <Advantages />
+        {/* <Hero /> */}
+        {/* <Advantages /> */}
       </main>
       {/* <PricingPlans /> */}
       {/* <AdditionalServices /> */}

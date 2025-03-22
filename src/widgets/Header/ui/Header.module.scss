@@ -13,7 +13,6 @@
     background-color: var(--light-grey);
     content: '';
   }
-
   @include media-fullHD {
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -22,8 +21,10 @@
   &__Content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     min-height: 82px;
+    @include media-initial {
+      justify-content: space-between;
+    }
     @include media-laptop {
       justify-content: flex-start;
     }
@@ -32,20 +33,22 @@
     }
   }
 
-  &__ButtonBurger {
+  &__ButtonBurgerElement {
     @include media-laptop {
       display: none;
     }
   }
 
-  &__Logo {
+  &__LogoElement {
     @include media-laptop {
       margin-right: auto;
     }
   }
 
   &__Navigation {
-    display: none;
+    @include media-initial {
+      display: none;
+    }
     @include media-laptop {
       display: revert;
       margin-right: auto;
@@ -56,7 +59,9 @@
   }
 
   &__Contacts {
-    display: none;
+    @include media-initial {
+      display: none;
+    }
     @include media-desktop {
       display: flex;
     }

@@ -1,15 +1,15 @@
 import cn from 'classnames';
 import Image from 'next/image';
-import styles from './Logo.module.scss';
+import styles from './LogoElement.module.scss';
 
-interface LogoProps {
+interface LogoElementProps {
   className?: string;
 }
 
-export function Logo({ className }: Readonly<LogoProps>) {
+export function LogoElement({ className }: Readonly<LogoElementProps>) {
   return (
     <Image
-      className={cn(styles.Logo, className)}
+      className={cn(styles.LogoElement, className)}
       src="/leadconveer/svg/logo.svg"
       alt="Логотип leadconveer"
       width={251}

@@ -14,7 +14,7 @@
   }
 }
 
-@mixin effect-hover-NavLink {
+@mixin effect-hover-NavLinkElement {
   transition: color var(--time-hover);
   @media screen and (hover: hover) {
     &:hover {
@@ -46,3 +46,5 @@
     }
   }
 }
+
+

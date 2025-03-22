@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import { ContactLink } from './ContactLink';
-import { ContactTel } from './ContactTel';
+import { ContactLinkElement } from './ContactLinkElement';
+import { ContactTelElement } from './ContactTelElement';
 import styles from './Contacts.module.scss';
 
 interface ContactsProps {
@@ -10,9 +10,9 @@ interface ContactsProps {
 export function Contacts({ className }: Readonly<ContactsProps>) {
   return (
     <address className={cn(styles.Contacts, className)}>
-      <ContactLink href="#" icon="whatsapp" />
-      <ContactLink href="#" icon="telegram" />
-      <ContactTel text="+7 495 118-32-82" />
+      <ContactLinkElement href="#" icon="whatsapp" />
+      <ContactLinkElement href="#" icon="telegram" />
+      <ContactTelElement text="+7 495 118-32-82" />
     </address>
   );
 }
