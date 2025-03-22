@@ -1,0 +1,1 @@
+export { SectionTitleElement } from './SectionTitleElement';

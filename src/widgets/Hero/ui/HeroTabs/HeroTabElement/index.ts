@@ -1,0 +1,1 @@
+export { HeroTabElement } from './HeroTabElement';

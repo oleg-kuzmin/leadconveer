@@ -1,9 +1,11 @@
 import cn from 'classnames';
-import { Content, MainButton, Star } from '@/shared/ui';
-import { HeroImage } from './HeroImage';
+import { Content, MainButtonElement, StarElement } from '@/shared/ui';
+import { HeroImageElement } from './HeroImageElement';
 import { HeroPrice } from './HeroPrice';
 import { HeroTabs } from './HeroTabs';
-import { HeroTitle } from './HeroTitle';
+import { HeroText } from './HeroText';
+import { HeroTitleElement } from './HeroTitleElement';
+import { ImageContainer } from './ImageContainer';
 import styles from './Hero.module.scss';
 
 interface HeroProps {
@@ -14,18 +16,20 @@ export function Hero({ className }: Readonly<HeroProps>) {
   return (
     <section className={cn(styles.Hero, className)}>
       <Content className={styles.Hero__Content}>
-        <div className={styles.Hero__ImageContainer}>
-          <HeroImage />
-          <Star className={styles.Hero__Star1} icon="hero1" />
-          <Star className={styles.Hero__Star2} icon="hero2" />
-        </div>
-        <div className={styles.Hero__Text}>
-          <HeroTitle className={styles.Hero__Title} />
+        <ImageContainer>
+          <HeroImageElement className={styles.Hero__Image} />
+          <StarElement className={styles.Hero__Star1} icon="hero1" />
+          <StarElement className={styles.Hero__Star2} icon="hero2" />
+        </ImageContainer>
+        <HeroText className={styles.Hero__Text}>
+          <HeroTitleElement />
           <HeroPrice />
-          <MainButton className={styles.Hero__Button} text="Выбрать пакет лидов" />
-        </div>
+          <MainButtonElement className={styles.Hero__Button} text="Выбрать пакет лидов" />
+        </HeroText>
       </Content>
-      <HeroTabs className={styles.Hero__Tabs} />
+      <Content>
+        <HeroTabs className={styles.Hero__Tabs} />
+      </Content>
     </section>
   );
 }

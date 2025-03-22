@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.SectionSubtitleElement {
+  color: var(--grey);
+  text-align: center;
+  @include font-figma-H3(121%);
+}

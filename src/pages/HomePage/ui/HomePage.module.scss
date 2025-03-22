@@ -1,0 +1,12 @@
+@use '@/shared/mixins' as *;
+
+.HomePage {
+  &__Hero {
+    @include media-initial {
+      padding-top: 30px;
+    }
+    @include media-desktop {
+      padding-top: 60px;
+    }
+  }
+}

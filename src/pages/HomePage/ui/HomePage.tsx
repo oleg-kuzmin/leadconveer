@@ -14,13 +14,14 @@ import { PricingPlans } from '@/widgets/PricingPlans';
 import { RegistrationFirst } from '@/widgets/RegistrationFirst';
 import { RegistrationSecond } from '@/widgets/RegistrationSecond';
 import { Reviews } from '@/widgets/Reviews';
+import styles from './HomePage.module.scss';
 
 export function HomePage() {
   return (
     <>
       <Header />
       <main>
-        {/* <Hero /> */}
+        <Hero className={styles.HomePage__Hero} />
         {/* <Advantages /> */}
       </main>
       {/* <PricingPlans /> */}

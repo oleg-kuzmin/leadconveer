@@ -1,6 +1,6 @@
 export { Content } from './Content';
-export { MainButton } from './MainButton';
-export { SectionSubtitle } from './SectionSubtitle';
-export { SectionTitle } from './SectionTitle';
-export { Star } from './Star';
+export { MainButtonElement } from './MainButtonElement';
+export { SectionSubtitleElement } from './SectionSubtitleElement';
+export { SectionTitleElement } from './SectionTitleElement';
+export { StarElement } from './StarElement';
 export { Video } from './Video';

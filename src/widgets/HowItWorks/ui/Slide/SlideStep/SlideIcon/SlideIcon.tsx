@@ -26,8 +26,7 @@ export function SlideIcon({ step, className }: Readonly<SlideIconProps>) {
       classIcon = styles.SlideIcon_05;
       break;
     default:
-      classIcon = '';
-      break;
+      throw Error('SlideIcon: unknown icon.');
   }
 
   return <div className={cn(styles.SlideIcon, classIcon, className)}></div>;

@@ -1,11 +1,7 @@
 @use '@/shared/mixins' as *;
 
 .Hero {
-  padding-top: 30px;
   background-color: var(--light-grey);
-  @include media-desktop {
-    padding-top: 60px;
-  }
   @include media-fullHD {
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -13,11 +9,13 @@
 
   &__Content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include media-initial {
+      flex-direction: column;
+      align-items: center;
+    }
     @include media-desktop {
       flex-direction: row-reverse;
-      align-items: flex-start;
+      align-items: flex-end;
       justify-content: center;
       gap: 50px;
     }
@@ -30,17 +28,19 @@
     }
   }
 
-  &__ImageContainer {
-    position: relative;
+  &__Image {
+    max-width: 791px;
   }
 
   &__Star1 {
     z-index: 1;
     position: absolute;
     bottom: 15.6%;
-    left: 0;
     width: calc(60px / 791px * 100%);
     height: calc(60px / 497px * 100%);
+    @include media-initial {
+      left: 0;
+    }
     @include media-laptop {
       left: -3.7%;
     }
@@ -50,39 +50,38 @@
     z-index: 1;
     position: absolute;
     top: 21.4%;
-    right: 0;
     width: calc(62px / 791px * 100%);
     height: calc(62px / 497px * 100%);
+    @include media-initial {
+      right: 0;
+    }
     @include media-laptop {
       right: -3.8%;
     }
   }
 
   &__Text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    gap: 20px;
-    @include media-tablet {
-      gap: 30px;
+    @include media-initial {
+      padding-top: 30px;
     }
     @include media-desktop {
-      align-items: flex-start;
       padding-top: 54px;
-      gap: 40px;
     }
   }
 
   &__Button {
-    max-width: 300px;
+    @include media-initial {
+      max-width: 300px;
+    }
     @include media-desktop {
       max-width: revert;
     }
   }
 
   &__Tabs {
-    padding-top: 30px;
+    @include media-initial {
+      padding-top: 30px;
+    }
     @include media-desktop {
       padding-top: 60px;
     }

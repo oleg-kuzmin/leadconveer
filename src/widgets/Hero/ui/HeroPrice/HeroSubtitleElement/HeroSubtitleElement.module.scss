@@ -1,0 +1,11 @@
+@use '@/shared/mixins' as *;
+
+.HeroSubtitleElement {
+  @include media-initial {
+    @include font-regular(16px, 121%);
+    @include font-apadtive-size(16, 32, 320, 1440);
+  }
+  @include media-desktop {
+    @include font-figma-H3;
+  }
+}

@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import { HeroSubtitle } from './HeroSubtitle';
-import { Smile } from './Smile';
+import { HeroSubtitleElement } from './HeroSubtitleElement';
+import { SmileElement } from './SmileElement';
 import styles from './HeroPrice.module.scss';
 
 interface HeroPriceProps {
@@ -10,10 +10,11 @@ interface HeroPriceProps {
 export function HeroPrice({ className }: Readonly<HeroPriceProps>) {
   return (
     <div className={cn(styles.HeroPrice, className)}>
-      <HeroSubtitle text="Покупайте только целевые лиды по фиксированной цене от 300 ₽" />
-      <Smile />
+      <HeroSubtitleElement
+        className={styles.HeroPrice__HeroSubtitleElement}
+        text="Покупайте только целевые лиды по фиксированной цене от 300 ₽"
+      />
+      <SmileElement />
     </div>
   );
 }
-
-// по фиксированной

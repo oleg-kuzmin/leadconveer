@@ -1,0 +1,1 @@
+export { HeroSubtitleElement } from './HeroSubtitleElement';

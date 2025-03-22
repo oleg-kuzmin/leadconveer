@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import cn from 'classnames';
-import { VideoButton } from './VideoButton';
+import { VideoButtonElement } from './VideoButtonElement';
 import styles from './Video.module.scss';
 
 interface VideoProps {
@@ -46,8 +46,8 @@ export function Video({ src, type, poster, className }: Readonly<VideoProps>) {
 
   return (
     <div className={cn(styles.Video, className)}>
-      {isPlayed && <VideoButton className={styles.Video__Button} icon="pause" onClick={handlePauseVideo} />}
-      {!isPlayed && <VideoButton className={styles.Video__Button} icon="play" onClick={handlePlayVideo} />}
+      {isPlayed && <VideoButtonElement className={styles.Video__Button} icon="pause" onClick={handlePauseVideo} />}
+      {!isPlayed && <VideoButtonElement className={styles.Video__Button} icon="play" onClick={handlePlayVideo} />}
       <video
         className={styles.Video__Element}
         preload="none"

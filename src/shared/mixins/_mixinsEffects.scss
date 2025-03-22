@@ -23,7 +23,7 @@
   }
 }
 
-@mixin effect-hover-MainButton {
+@mixin effect-hover-MainButtonElement {
   transition: background-color var(--time-hover);
   &:active {
     background-color: var(--dark-orange);
@@ -38,7 +38,7 @@
   }
 }
 
-@mixin effect-hover-VideoButton {
+@mixin effect-hover-VideoButtonElement {
   @media screen and (hover: hover) {
     transition: opacity var(--time-hover);
     &:hover {
@@ -46,5 +46,3 @@
     }
   }
 }
-
-

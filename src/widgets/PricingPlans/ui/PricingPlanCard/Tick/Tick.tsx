@@ -17,8 +17,7 @@ export function Tick({ icon, className }: Readonly<TickProps>) {
       classIcon = styles.Tick_Black;
       break;
     default:
-      classIcon = '';
-      break;
+      throw Error('Tick: unknown icon.');
   }
 
   return <span className={cn(styles.Tick, classIcon, className)}>*</span>;

@@ -3,7 +3,9 @@
 .Content {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 16px;
+  @include media-initial {
+    padding: 0 16px;
+  }
   @include media-laptop {
     padding: 0 32px;
   }

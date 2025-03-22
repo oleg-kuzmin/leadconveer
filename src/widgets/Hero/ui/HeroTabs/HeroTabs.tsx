@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { HeroTab } from './HeroTab';
+import { HeroTabElement } from './HeroTabElement';
 import styles from './HeroTabs.module.scss';
 
 interface HeroTabsProps {
@@ -9,12 +9,12 @@ interface HeroTabsProps {
 export function HeroTabs({ className }: Readonly<HeroTabsProps>) {
   return (
     <div className={cn(styles.HeroTabs, className)}>
-      <HeroTab text="Лидогенерация в b2b" />
-      <HeroTab text="Биржа лидов" />
-      <HeroTab text="Сервис по Лидгену" />
-      <HeroTab text="Лиды для производства" />
-      <HeroTab text="Клиенты для бизнеса" />
-      <HeroTab text="Определить телефон посетителя сайта" />
+      <HeroTabElement text="Лидогенерация в b2b" />
+      <HeroTabElement text="Биржа лидов" />
+      <HeroTabElement text="Сервис по Лидгену" />
+      <HeroTabElement text="Лиды для производства" />
+      <HeroTabElement text="Клиенты для бизнеса" />
+      <HeroTabElement text="Определить телефон посетителя сайта" />
     </div>
   );
 }

@@ -1,0 +1,1 @@
+export { SmileElement } from './SmileElement';
