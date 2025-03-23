@@ -1,11 +1,10 @@
 import cn from 'classnames';
 import { Content, MainButtonElement, StarElement } from '@/shared/ui';
 import { HeroImageElement } from './HeroImageElement';
-import { HeroPrice } from './HeroPrice';
-import { HeroTabs } from './HeroTabs';
-import { HeroText } from './HeroText';
+import { HeroSubtitleElement } from './HeroSubtitleElement';
+import { HeroTabElement } from './HeroTabElement';
 import { HeroTitleElement } from './HeroTitleElement';
-import { ImageContainer } from './ImageContainer';
+import { SmileElement } from './SmileElement';
 import styles from './Hero.module.scss';
 
 interface HeroProps {
@@ -16,19 +15,29 @@ export function Hero({ className }: Readonly<HeroProps>) {
   return (
     <section className={cn(styles.Hero, className)}>
       <Content className={styles.Hero__Content}>
-        <ImageContainer>
+        <div className={styles.Hero__ImageContainer}>
           <HeroImageElement className={styles.Hero__Image} />
           <StarElement className={styles.Hero__Star1} icon="hero1" />
           <StarElement className={styles.Hero__Star2} icon="hero2" />
-        </ImageContainer>
-        <HeroText className={styles.Hero__Text}>
+        </div>
+        <div className={styles.Hero__Text}>
           <HeroTitleElement />
-          <HeroPrice />
+          <div className={styles.Hero__Price}>
+            <HeroSubtitleElement className={styles.Hero__Subtitle} />
+            <SmileElement />
+          </div>
           <MainButtonElement className={styles.Hero__Button} text="Выбрать пакет лидов" />
-        </HeroText>
+        </div>
       </Content>
       <Content className={styles.Hero__Tabs}>
-        <HeroTabs />
+        <div className={styles.Hero__TabsList}>
+          <HeroTabElement text="Лидогенерация в b2b" />
+          <HeroTabElement text="Биржа лидов" />
+          <HeroTabElement text="Сервис по Лидгену" />
+          <HeroTabElement text="Лиды для производства" />
+          <HeroTabElement text="Клиенты для бизнеса" />
+          <HeroTabElement text="Определить телефон посетителя сайта" />
+        </div>
       </Content>
     </section>
   );

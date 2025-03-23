@@ -1,1 +1,0 @@
-export { HeroTabs } from './HeroTabs';
