@@ -1,1 +1,0 @@
-export { CardPrice } from './CardPrice';

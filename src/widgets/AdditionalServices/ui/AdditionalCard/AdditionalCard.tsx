@@ -1,7 +1,7 @@
 import cn from 'classnames';
-import { MainButtonElement, StarElement } from '@/shared/ui';
-import { CardPriceElement } from './CardPriceElement';
-import { CardTitleElement } from './CardTitleElement';
+import { ElementMainButton, ElementStar } from '@/shared/ui';
+import { ElementCardPrice } from '../ElementCardPrice';
+import { ElementCardTitle } from '../ElementCardTitle';
 import styles from './AdditionalCard.module.scss';
 
 interface AdditionalCardProps {
@@ -13,12 +13,12 @@ interface AdditionalCardProps {
 export function AdditionalCard({ title, price, className }: Readonly<AdditionalCardProps>) {
   return (
     <div className={cn(styles.AdditionalCard, className)}>
-      <CardTitleElement className={styles.AdditionalCard__Title}>{title}</CardTitleElement>
+      <ElementCardTitle className={styles.AdditionalCard__Title}>{title}</ElementCardTitle>
       <div>
-        <CardPriceElement className={styles.AdditionalCard__Price} price={price} />
-        <MainButtonElement text="купить" />
+        <ElementCardPrice className={styles.AdditionalCard__Price} price={price} />
+        <ElementMainButton text="купить" />
       </div>
-      <StarElement className={styles.AdditionalCard__Star} icon="additionalServiceCard" />
+      <ElementStar className={styles.AdditionalCard__Star} icon="additionalServiceCard" />
     </div>
   );
 }
