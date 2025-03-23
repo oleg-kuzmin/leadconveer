@@ -1,0 +1,24 @@
+@use '@/shared/mixins' as *;
+
+.ElementStatText {
+  @include media-initial {
+    @include font-figma-txt(16px);
+  }
+  @include media-desktop {
+    @include font-figma-txt;
+  }
+  &_Bold {
+    @include media-initial {
+      @include font-figma-txt-bold(16px);
+    }
+    @include media-desktop {
+      @include font-figma-txt-bold;
+    }
+  }
+  &_ThemeDark {
+    color: var(--white);
+  }
+  &_ThemeLight {
+    color: var(--dark-grey);
+  }
+}

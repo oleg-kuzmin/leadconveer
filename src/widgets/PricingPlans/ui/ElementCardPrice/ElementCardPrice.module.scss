@@ -1,0 +1,23 @@
+@use '@/shared/mixins' as *;
+
+.ElementCardPrice {
+  @include media-initial {
+    @include font-bold(18px, 117%, 'Montserrat');
+  }
+
+  @include media-desktop {
+    @include font-bold(36px, 42px, 'Montserrat');
+  }
+
+  &__Span {
+    &_LightTheme {
+      background-clip: text;
+      background-color: var(--dark-grey);
+    }
+
+    &_DarkTheme {
+      background-clip: text;
+      background-color: var(--white);
+    }
+  }
+}

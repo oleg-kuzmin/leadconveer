@@ -1,14 +1,11 @@
 import cn from 'classnames';
 import { theme } from '@/shared/lib/types';
-import { MainButtonElement, StarElement } from '@/shared/ui';
-import { CardContent } from './CardContent';
-import { CardDescriptionElement } from './CardDescriptionElement';
-import { CardHeader } from './CardHeader';
-import { CardLabelElement } from './CardLabelElement';
-import { CardPriceElement } from './CardPriceElement';
-import { CardStats } from './CardStats';
-import { CardTitleContainer } from './CardTitleContainer';
-import { CardTitleElement } from './CardTitleElement';
+import { ElementMainButton, ElementStar } from '@/shared/ui';
+import { CardStats } from '../CardStats';
+import { ElementCardDescription } from '../ElementCardDescription';
+import { ElementCardLabel } from '../ElementCardLabel';
+import { ElementCardPrice } from '../ElementCardPrice';
+import { ElementCardTitle } from '../ElementCardTitle';
 import styles from './PlanCard.module.scss';
 
 interface PlanCardProps {
@@ -37,22 +34,22 @@ export function PlanCard({ name, title, price, description, stats, theme, classN
 
   return (
     <div className={cn(styles.PlanCard, classTheme, className)}>
-      <CardHeader className={styles.PlanCard__Header}>
-        <CardLabelElement text={name} theme={theme} />
-        <StarElement
+      <div className={styles.PlanCard__Header}>
+        <ElementCardLabel text={name} theme={theme} />
+        <ElementStar
           className={styles.PlanCard__Star}
           icon={theme === 'light' ? 'pricingPlanCard' : 'pricingPlanCardDark'}
         />
-      </CardHeader>
-      <CardContent>
-        <CardTitleContainer className={styles.PlanCard__TitleContainer}>
-          <CardTitleElement theme={theme}>{title}</CardTitleElement>
-          <CardPriceElement theme={theme}>{price}</CardPriceElement>
-        </CardTitleContainer>
-        <CardDescriptionElement className={styles.PlanCard__Description}>{description}</CardDescriptionElement>
+      </div>
+      <div className={styles.PlanCard__Content}>
+        <div className={styles.PlanCard__TitleContainer}>
+          <ElementCardTitle theme={theme}>{title}</ElementCardTitle>
+          <ElementCardPrice theme={theme}>{price}</ElementCardPrice>
+        </div>
+        <ElementCardDescription className={styles.PlanCard__Description}>{description}</ElementCardDescription>
         <CardStats className={styles.PlanCard__Stats} stats={stats} theme={theme} />
-      </CardContent>
-      <MainButtonElement className={styles.PlanCard__Button} text="купить" />
+      </div>
+      <ElementMainButton className={styles.PlanCard__Button} text="купить" />
     </div>
   );
 }
