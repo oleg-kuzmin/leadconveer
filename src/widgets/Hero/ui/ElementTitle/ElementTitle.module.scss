@@ -1,0 +1,14 @@
+@use '@/shared/mixins' as *;
+
+.ElementTitle {
+  max-width: 800px;
+  @include media-initial {
+    text-align: center;
+    @include font-figma-H1(24px);
+    @include font-apadtive-size(24, 80, 320, 1440);
+  }
+  @include media-desktop {
+    text-align: left;
+    @include font-figma-H1;
+  }
+}

@@ -1,1 +1,0 @@
-export { HeroImageElement } from './HeroImageElement';

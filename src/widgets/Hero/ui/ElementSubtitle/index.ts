@@ -1,0 +1,1 @@
+export { ElementSubtitle } from './ElementSubtitle';

@@ -1,1 +1,0 @@
-export { StarElement } from './StarElement';

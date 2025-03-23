@@ -1,1 +1,0 @@
-export { HeroTitleElement } from './HeroTitleElement';

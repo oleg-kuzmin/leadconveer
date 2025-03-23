@@ -1,1 +1,0 @@
-export { HeroSubtitleElement } from './HeroSubtitleElement';

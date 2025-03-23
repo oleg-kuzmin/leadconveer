@@ -1,0 +1,26 @@
+@use '@/shared/mixins' as *;
+
+.ElementMainButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--orange-juice);
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  @include effect-hover-ElementMainButton;
+  @include effect-focus-ElementMainButton;
+
+  @include media-initial {
+    height: 50px;
+    border-radius: 10px;
+    @include font-figma-button(16px);
+  }
+
+  @include media-desktop {
+    height: 72px;
+    border-radius: 20px;
+    @include font-figma-button;
+  }
+}

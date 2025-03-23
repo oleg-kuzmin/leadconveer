@@ -1,1 +1,0 @@
-export { MainButtonElement } from './MainButtonElement';
