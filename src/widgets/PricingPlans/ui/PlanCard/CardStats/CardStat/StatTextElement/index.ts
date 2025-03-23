@@ -1,0 +1,1 @@
+export { StatTextElement } from './StatTextElement';

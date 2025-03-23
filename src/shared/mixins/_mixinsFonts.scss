@@ -7,44 +7,44 @@
 }
 
 // Figma mixins
-@mixin font-figma-H1($_lineHeight: 100%) {
+@mixin font-figma-H1($_fontSize: 80px, $_lineHeight: 100%) {
   font-weight: 700;
-  font-size: 80px;
+  font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: var(--second-family);
 }
 
-@mixin font-figma-H2($_lineHeight: 108%) {
+@mixin font-figma-H2($_fontSize: 48px, $_lineHeight: 108%) {
   font-weight: 700;
-  font-size: 48px;
+  font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: var(--second-family);
 }
 
-@mixin font-figma-H3($_lineHeight: 121%) {
+@mixin font-figma-H3($_fontSize: 32px, $_lineHeight: 121%) {
   font-weight: 400;
-  font-size: 32px;
+  font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }
 
-@mixin font-figma-txt($_lineHeight: 121%) {
+@mixin font-figma-txt($_fontSize: 24px, $_lineHeight: 121%) {
   font-weight: 400;
-  font-size: 24px;
+  font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }
 
-@mixin font-figma-txt-bold($_lineHeight: 121%) {
+@mixin font-figma-txt-bold($_fontSize: 24px, $_lineHeight: 121%) {
   font-weight: 700;
-  font-size: 24px;
+  font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }
 
-@mixin font-figma-button($_lineHeight: 121%) {
+@mixin font-figma-button($_fontSize: 24px, $_lineHeight: 121%) {
   font-weight: 600;
-  font-size: 24px;
+  font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: var(--font-family);
 }

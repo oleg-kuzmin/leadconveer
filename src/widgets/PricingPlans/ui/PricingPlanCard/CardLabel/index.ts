@@ -1,1 +1,0 @@
-export { CardLabel } from './CardLabel';

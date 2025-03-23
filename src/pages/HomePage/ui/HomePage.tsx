@@ -1,6 +1,7 @@
 import { Advantages } from '@/widgets/Advantages';
 import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
+import { PricingPlans } from '@/widgets/PricingPlans';
 import styles from './HomePage.module.scss';
 
 export function HomePage() {
@@ -10,8 +11,8 @@ export function HomePage() {
       <main>
         <Hero className={styles.HomePage__Hero} />
         <Advantages className={styles.HomePage__Advantages} />
+        <PricingPlans className={styles.HomePage__PricingPlans} />
       </main>
-      {/* <PricingPlans /> */}
       {/* <AdditionalServices /> */}
       {/* <Clients /> */}
       {/* <Reviews /> */}

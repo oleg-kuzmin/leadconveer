@@ -15,7 +15,7 @@
   @include media-initial {
     height: 50px;
     border-radius: 10px;
-    @include font-semibold(16px);
+    @include font-figma-button(16px);
   }
 
   @include media-desktop {

@@ -64,7 +64,7 @@
       padding-top: 30px;
     }
     @include media-desktop {
-      padding-top: 54px;
+      padding-top: 55px;
     }
   }
 
@@ -82,7 +82,7 @@
       padding-top: 30px;
     }
     @include media-desktop {
-      padding-top: 60px;
+      padding: 60px 30px 0;
     }
   }
 }

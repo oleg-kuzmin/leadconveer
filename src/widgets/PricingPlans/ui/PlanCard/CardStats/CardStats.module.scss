@@ -1,0 +1,14 @@
+@use '@/shared/mixins' as *;
+
+.CardStats {
+  display: flex;
+  flex-direction: column;
+
+  @include media-initial {
+    gap: 10px;
+  }
+
+  @include media-laptop {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+@use '@/shared/mixins' as *;
+
+.TickElement {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 28px;
+  height: 100%;
+  min-height: 29px;
+  background-position: center;
+  background-size: 28px 21px;
+  background-repeat: no-repeat;
+  font-size: 0;
+
+  &_LightTheme {
+    background-image: url('/leadconveer/svg/tick-black.svg');
+  }
+
+  &_DarkTheme {
+    background-image: url('/leadconveer/svg/tick-white.svg');
+  }
+}

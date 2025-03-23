@@ -4,7 +4,7 @@
   text-align: center;
 
   @include media-initial {
-    @include font-bold(24px, 121%, 'Montserrat');
+    @include font-figma-H2(24px);
     @include font-apadtive-size(24, 48, 320, 1440);
   }
 

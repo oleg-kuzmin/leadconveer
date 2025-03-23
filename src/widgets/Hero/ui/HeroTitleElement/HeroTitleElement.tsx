@@ -9,7 +9,7 @@ interface HeroTitleElementProps {
 export function HeroTitleElement({ className }: Readonly<HeroTitleElementProps>) {
   return (
     <h1 className={cn(styles.HeroTitleElement, className)}>
-      <AccentTextElement tag="strong">Лидогенерация</AccentTextElement>
+      <AccentTextElement>Лидогенерация</AccentTextElement>
       <span> для&nbsp;бизнеса </span>
     </h1>
   );

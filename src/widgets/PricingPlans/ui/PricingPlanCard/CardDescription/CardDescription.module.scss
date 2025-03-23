@@ -1,6 +1,0 @@
-@use '@/shared/mixins' as *;
-
-.CardDescription {
-  color: var(--grey);
-  @include font-figma-txt(120%);
-}

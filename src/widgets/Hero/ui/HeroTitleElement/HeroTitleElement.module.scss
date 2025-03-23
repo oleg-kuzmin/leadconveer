@@ -4,7 +4,7 @@
   max-width: 800px;
   @include media-initial {
     text-align: center;
-    @include font-bold(24px, 121%, 'Montserrat');
+    @include font-figma-H1(24px);
     @include font-apadtive-size(24, 80, 320, 1440);
   }
   @include media-desktop {

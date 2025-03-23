@@ -4,10 +4,10 @@
   color: var(--grey);
 
   @include media-initial {
-    @include font-regular(16px, 121%);
+    @include font-figma-txt(16px);
   }
 
   @include media-desktop {
-    @include font-figma-txt(121%);
+    @include font-figma-txt;
   }
 }

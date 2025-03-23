@@ -7,7 +7,7 @@ interface StarElementProps {
     | 'hero2'
     | 'advantageCard'
     | 'pricingPlanCard'
-    | 'pricingPlanCardInvert'
+    | 'pricingPlanCardDark'
     | 'additionalServiceCard'
     | 'reviewCard'
     | 'technology1'
@@ -36,8 +36,8 @@ export function StarElement({ icon, className }: Readonly<StarElementProps>) {
     case 'pricingPlanCard':
       classIcon = styles.StarElement_PricingPlanCard;
       break;
-    case 'pricingPlanCardInvert':
-      classIcon = styles.StarElement_PricingPlanCardInvert;
+    case 'pricingPlanCardDark':
+      classIcon = styles.StarElement_PricingPlanCardDark;
       break;
     case 'additionalServiceCard':
       classIcon = styles.StarElement_AdditionalServiceCard;

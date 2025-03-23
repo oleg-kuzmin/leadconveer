@@ -13,7 +13,7 @@ export function Advantages({ className }: Readonly<AdvantagesProps>) {
     <section className={cn(styles.Advantages, className)}>
       <Content className={styles.Advantages__Content}>
         <SectionTitleElement className={styles.Advantages__Title}>
-          Завалим ваш отдел продаж <AccentTextElement tag="span">целевыми&nbsp;Лидами</AccentTextElement>
+          Завалим ваш отдел продаж <AccentTextElement>целевыми&nbsp;Лидами</AccentTextElement>
         </SectionTitleElement>
         <AdvantagesCards>
           <AdvantageCard

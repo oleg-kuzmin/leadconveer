@@ -1,0 +1,72 @@
+@use '@/shared/mixins' as *;
+
+.PlanCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &_Light {
+    background-color: var(--light-grey);
+  }
+  &_Dark {
+    background-color: var(--dark-grey);
+  }
+  @include media-initial {
+    max-width: 380px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  @include media-laptop {
+    max-width: 580px;
+    min-height: 813px;
+    padding: 40px;
+    border-radius: 30px;
+  }
+
+  &__Star {
+    @include media-initial {
+      width: 28px;
+      height: 28px;
+    }
+    @include media-laptop {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  &__Header {
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-laptop {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__TitleContainer {
+    padding-bottom: 20px;
+  }
+
+  &__Description {
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-laptop {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__Stats {
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-laptop {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__Button {
+    // max-width: 500px;
+    margin-top: auto;
+  }
+}

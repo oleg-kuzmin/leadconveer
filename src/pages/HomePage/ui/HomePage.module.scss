@@ -15,7 +15,16 @@
       padding-top: 40px;
     }
     @include media-desktop {
-      padding-top: 127px;
+      padding-top: 126px;
+    }
+  }
+
+  &__PricingPlans {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 121px;
     }
   }
 }

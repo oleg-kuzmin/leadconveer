@@ -1,0 +1,21 @@
+@use '@/shared/mixins' as *;
+
+.CardTitleElement {
+  @include media-initial {
+    @include font-bold(18px, 117%, 'Montserrat');
+  }
+
+  @include media-laptop {
+    @include font-bold(36px, 42px, 'Montserrat');
+  }
+
+  &_LightTheme {
+    background-clip: text;
+    background-color: var(--dark-grey);
+  }
+
+  &_DarkTheme {
+    background-clip: text;
+    background-color: var(--white);
+  }
+}

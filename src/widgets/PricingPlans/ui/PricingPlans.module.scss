@@ -1,11 +1,31 @@
 @use '@/shared/mixins' as *;
 
 .PricingPlans {
+  &__Content {
+    @include media-desktop {
+      padding: 0;
+    }
+  }
+
   &__Title {
-    max-width: 784px;
+    padding-bottom: 20px;
+    @include media-desktop {
+      max-width: 784px;
+      margin: 0 auto;
+    }
   }
 
   &__Subtitle {
-    max-width: 1084px;
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-laptop {
+      padding-bottom: 60px;
+    }
+    @include media-desktop {
+      max-width: 1084px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
   }
 }

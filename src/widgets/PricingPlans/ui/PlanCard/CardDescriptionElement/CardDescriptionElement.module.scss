@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.CardDescriptionElement {
+  color: var(--grey);
+
+  @include media-initial {
+    @include font-figma-txt(16px);
+  }
+
+  @include media-laptop {
+    @include font-figma-txt;
+  }
+}

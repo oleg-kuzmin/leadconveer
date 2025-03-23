@@ -15,3 +15,4 @@
   }
 
 - возможно mixinsContent не используется
+- проверить switch-case
