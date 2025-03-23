@@ -1,1 +1,0 @@
-export { ContactLinkElement } from './ContactLinkElement';

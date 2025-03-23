@@ -1,1 +1,0 @@
-export { LogoElement } from './LogoElement';

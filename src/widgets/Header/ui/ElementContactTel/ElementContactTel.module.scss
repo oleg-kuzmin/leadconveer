@@ -1,6 +1,6 @@
 @use '@/shared/mixins' as *;
 
-.ContactTelElement {
+.ElementContactTel {
   color: var(--white);
   @include font-figma-H3;
 }

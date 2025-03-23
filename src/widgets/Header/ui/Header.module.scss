@@ -33,13 +33,13 @@
     }
   }
 
-  &__ButtonBurgerElement {
+  &__ButtonBurger {
     @include media-laptop {
       display: none;
     }
   }
 
-  &__LogoElement {
+  &__Logo {
     @include media-laptop {
       margin-right: auto;
     }

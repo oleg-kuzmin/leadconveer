@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import cn from 'classnames';
 import { Content } from '@/shared/ui';
-import { ButtonBurgerElement } from './ButtonBurgerElement';
 import { Contacts } from './Contacts';
-import { LogoElement } from './LogoElement';
+import { ElementButtonBurger } from './ElementButtonBurger';
+import { ElementLogo } from './ElementLogo';
 import { Navigation } from './Navigation';
 import styles from './Header.module.scss';
 
@@ -23,9 +23,9 @@ export function Header({ className }: Readonly<HeaderProps>) {
   return (
     <header className={cn(styles.Header, className)}>
       <Content className={styles.Header__Content}>
-        <LogoElement className={styles.Header__LogoElement} />
-        <ButtonBurgerElement
-          className={styles.Header__ButtonBurgerElement}
+        <ElementLogo className={styles.Header__Logo} />
+        <ElementButtonBurger
+          className={styles.Header__ButtonBurger}
           isActive={isActiveBurgerMenu}
           onClick={handleClickBurgerMenu}
         />

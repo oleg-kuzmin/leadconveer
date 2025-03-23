@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { NavLinkElement } from './NavLinkElement';
+import { ElementNavLink } from '../ElementNavLink';
 import styles from './Navigation.module.scss';
 
 interface NavigationProps {
@@ -11,16 +11,16 @@ export function Navigation({ className }: Readonly<NavigationProps>) {
     <nav className={cn(styles.Navigation, className)}>
       <ul className={styles.Navigation__List}>
         <li>
-          <NavLinkElement href="#" text="Как это работает" />
+          <ElementNavLink href="#" text="Как это работает" />
         </li>
         <li>
-          <NavLinkElement href="#" text="Цена" />
+          <ElementNavLink href="#" text="Цена" />
         </li>
         <li>
-          <NavLinkElement href="#" text="Отзывы" />
+          <ElementNavLink href="#" text="Отзывы" />
         </li>
         <li>
-          <NavLinkElement href="#" text="Контакты" />
+          <ElementNavLink href="#" text="Контакты" />
         </li>
       </ul>
     </nav>
