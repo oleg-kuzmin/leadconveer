@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import { theme } from '@/shared/lib/types';
 import { MainButtonElement, StarElement } from '@/shared/ui';
 import { CardContent } from './CardContent';
 import { CardDescriptionElement } from './CardDescriptionElement';
@@ -9,8 +10,6 @@ import { CardStats } from './CardStats';
 import { CardTitleContainer } from './CardTitleContainer';
 import { CardTitleElement } from './CardTitleElement';
 import styles from './PlanCard.module.scss';
-
-export type theme = 'light' | 'dark';
 
 interface PlanCardProps {
   name: string;

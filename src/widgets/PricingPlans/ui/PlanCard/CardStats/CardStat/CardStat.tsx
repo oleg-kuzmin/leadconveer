@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { theme } from '../../PlanCard';
+import { theme } from '@/shared/lib/types';
 import { StatTextElement } from './StatTextElement';
 import { TickElement } from './TickElement';
 import styles from './CardStat.module.scss';

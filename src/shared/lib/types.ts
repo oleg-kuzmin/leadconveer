@@ -4,3 +4,5 @@ export interface ISlideObject {
   isOrdered: boolean;
   list: string[];
 }
+
+export type theme = 'light' | 'dark';

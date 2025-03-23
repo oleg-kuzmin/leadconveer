@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { theme } from '../PlanCard';
+import { theme } from '@/shared/lib/types';
 import styles from './CardLabelElement.module.scss';
 
 interface CardLabelElementProps {
