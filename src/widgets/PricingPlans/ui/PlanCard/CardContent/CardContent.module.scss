@@ -1,7 +1,7 @@
 @use '@/shared/mixins' as *;
 
 .CardContent {
-  @include media-laptop {
+  @include media-desktop {
     max-width: 443px;
   }
 }

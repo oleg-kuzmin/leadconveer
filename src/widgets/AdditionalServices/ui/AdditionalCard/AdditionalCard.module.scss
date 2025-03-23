@@ -1,0 +1,50 @@
+@use '@/shared/mixins' as *;
+
+.AdditionalCard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 40px;
+  background-color: var(--light-grey);
+  @include media-initial {
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+  }
+  @include media-desktop {
+    max-width: 730px;
+    padding: 40px;
+  }
+
+  &__Title {
+    max-width: 534px;
+    padding-bottom: 21px;
+    @include media-initial {
+      padding-right: 24px;
+    }
+    @include media-desktop {
+      padding-right: 40px;
+    }
+  }
+
+  &__Price {
+    padding-bottom: 31px;
+  }
+
+  &__Star {
+    position: absolute;
+    @include media-initial {
+      top: 20px;
+      right: 20px;
+      width: 24px;
+      height: 24px;
+    }
+    @include media-desktop {
+      top: 40px;
+      right: 40px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

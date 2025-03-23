@@ -2,11 +2,9 @@
 
 .CardSubtitleElement {
   color: var(--grey);
-
   @include media-initial {
     @include font-figma-txt(16px);
   }
-
   @include media-desktop {
     @include font-figma-txt;
   }

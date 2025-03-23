@@ -1,0 +1,40 @@
+@use '@/shared/mixins' as *;
+
+.CardPriceElement {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include media-desktop {
+    align-items: center;
+  }
+
+  &__Span {
+    @include media-initial {
+      @include font-figma-txt(16px);
+    }
+    @include media-desktop {
+      @include font-figma-txt;
+    }
+  }
+
+  &__Accent {
+    background: linear-gradient(
+      90deg,
+      #f60 0%,
+      #f26659 27.4%,
+      #f06177 37.4%,
+      #e55d97 48.4%,
+      #ca46d2 71.4%,
+      #8d13f9 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include media-initial {
+      @include font-bold(18px, 117%, 'Montserrat');
+    }
+    @include media-desktop {
+      @include font-bold(36px, 42px, 'Montserrat');
+    }
+  }
+}

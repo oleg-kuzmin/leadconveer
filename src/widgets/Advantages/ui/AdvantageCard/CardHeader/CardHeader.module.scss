@@ -3,11 +3,9 @@
 .CardHeader {
   display: flex;
   align-items: flex-start;
-
   @include media-initial {
     gap: 10px;
   }
-
   @include media-desktop {
     gap: 30px;
   }

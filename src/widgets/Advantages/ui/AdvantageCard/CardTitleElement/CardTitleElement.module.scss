@@ -4,7 +4,6 @@
   @include media-initial {
     @include font-figma-H3(24px);
   }
-
   @include media-desktop {
     @include font-figma-H3;
   }

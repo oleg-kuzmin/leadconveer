@@ -5,7 +5,7 @@
     @include font-bold(18px, 117%, 'Montserrat');
   }
 
-  @include media-laptop {
+  @include media-desktop {
     @include font-bold(36px, 42px, 'Montserrat');
   }
 

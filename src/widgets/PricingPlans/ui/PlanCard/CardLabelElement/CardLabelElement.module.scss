@@ -10,7 +10,7 @@
     @include font-figma-H3(16px);
   }
 
-  @include media-laptop {
+  @include media-desktop {
     border-radius: 20px;
     @include font-figma-H3(32px, 116%);
   }

@@ -3,7 +3,6 @@
 .HeroText {
   display: flex;
   flex-direction: column;
-
   @include media-initial {
     align-items: center;
     gap: 20px;

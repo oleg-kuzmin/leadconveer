@@ -1,3 +1,4 @@
+import { AdditionalServices } from '@/widgets/AdditionalServices';
 import { Advantages } from '@/widgets/Advantages';
 import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
@@ -12,8 +13,8 @@ export function HomePage() {
         <Hero className={styles.HomePage__Hero} />
         <Advantages className={styles.HomePage__Advantages} />
         <PricingPlans className={styles.HomePage__PricingPlans} />
+        <AdditionalServices className={styles.HomePage__AdditionalServices} />
       </main>
-      {/* <AdditionalServices /> */}
       {/* <Clients /> */}
       {/* <Reviews /> */}
       {/* <LeadTechnology /> */}

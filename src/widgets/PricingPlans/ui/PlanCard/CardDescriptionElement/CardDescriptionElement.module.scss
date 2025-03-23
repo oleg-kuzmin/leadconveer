@@ -7,7 +7,7 @@
     @include font-figma-txt(16px);
   }
 
-  @include media-laptop {
+  @include media-desktop {
     @include font-figma-txt;
   }
 }

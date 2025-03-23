@@ -5,7 +5,7 @@
     @include font-figma-txt(16px);
   }
 
-  @include media-laptop {
+  @include media-desktop {
     @include font-figma-txt;
   }
 
@@ -13,7 +13,7 @@
     @include media-initial {
       @include font-figma-txt-bold(16px);
     }
-    @include media-laptop {
+    @include media-desktop {
       @include font-figma-txt-bold;
     }
   }

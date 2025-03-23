@@ -1,5 +1,12 @@
 @use '@/shared/mixins' as *;
 
 .AdditionalServices {
-  
+  &__Title {
+    @include media-initial {
+      padding-bottom: 30px;
+    }
+    @include media-desktop {
+      padding-bottom: 39px;
+    }
+  }
 }

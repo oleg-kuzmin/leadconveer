@@ -16,7 +16,7 @@
     padding: 20px;
     border-radius: 10px;
   }
-  @include media-laptop {
+  @include media-desktop {
     max-width: 580px;
     min-height: 813px;
     padding: 40px;
@@ -28,7 +28,7 @@
       width: 28px;
       height: 28px;
     }
-    @include media-laptop {
+    @include media-desktop {
       width: 56px;
       height: 56px;
     }
@@ -38,7 +38,7 @@
     @include media-initial {
       padding-bottom: 20px;
     }
-    @include media-laptop {
+    @include media-desktop {
       padding-bottom: 30px;
     }
   }
@@ -51,7 +51,7 @@
     @include media-initial {
       padding-bottom: 20px;
     }
-    @include media-laptop {
+    @include media-desktop {
       padding-bottom: 30px;
     }
   }
@@ -60,13 +60,12 @@
     @include media-initial {
       padding-bottom: 20px;
     }
-    @include media-laptop {
+    @include media-desktop {
       padding-bottom: 30px;
     }
   }
 
   &__Button {
-    // max-width: 500px;
     margin-top: auto;
   }
 }
