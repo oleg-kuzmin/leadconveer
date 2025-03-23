@@ -1,6 +1,6 @@
 @use '@/shared/mixins' as *;
 
-.CardSubtitleElement {
+.ElementCardSubtitle {
   color: var(--grey);
   @include media-initial {
     @include font-figma-txt(16px);

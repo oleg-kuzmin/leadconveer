@@ -1,12 +1,10 @@
 @use '@/shared/mixins' as *;
 
-.CardHeader {
-  display: flex;
-  align-items: flex-start;
+.ElementCardTitle {
   @include media-initial {
-    gap: 10px;
+    @include font-figma-H3(24px);
   }
   @include media-desktop {
-    gap: 30px;
+    @include font-figma-H3;
   }
 }

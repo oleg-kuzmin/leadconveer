@@ -1,0 +1,1 @@
+export { ElementAccentText } from './ElementAccentText';

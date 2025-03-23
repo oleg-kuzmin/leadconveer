@@ -20,10 +20,18 @@
   }
 
   &__Header {
+    display: flex;
+    align-items: flex-start;
     padding-bottom: 20px;
+    @include media-initial {
+      gap: 10px;
+    }
+    @include media-desktop {
+      gap: 30px;
+    }
   }
 
-  &__ImageElement {
+  &__Image {
     @include media-initial {
       display: none;
     }
@@ -36,7 +44,7 @@
     }
   }
 
-  &__BgElement {
+  &__Bg {
     @include media-initial {
       display: none;
     }

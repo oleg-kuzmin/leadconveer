@@ -10,8 +10,8 @@ export function HomePage() {
     <>
       <Header />
       <main>
-        <Hero className={styles.HomePage__Hero} />
-        {/* <Advantages className={styles.HomePage__Advantages} /> */}
+        {/* <Hero className={styles.HomePage__Hero} /> */}
+        <Advantages className={styles.HomePage__Advantages} />
         {/* <PricingPlans className={styles.HomePage__PricingPlans} /> */}
         {/* <AdditionalServices className={styles.HomePage__AdditionalServices} /> */}
       </main>

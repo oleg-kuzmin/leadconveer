@@ -1,6 +1,6 @@
 @use '@/shared/mixins' as *;
 
-.CardImageElement {
+.ElementCardImage {
   object-fit: contain;
   vertical-align: top;
   @include media-initial {

@@ -1,13 +1,11 @@
 @use '@/shared/mixins' as *;
 
-.SectionTitleElement {
+.ElementSectionTitle {
   text-align: center;
-
   @include media-initial {
     @include font-figma-H2(24px);
     @include font-apadtive-size(24, 48, 320, 1440);
   }
-
   @include media-desktop {
     @include font-figma-H2;
   }
