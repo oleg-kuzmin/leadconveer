@@ -1,0 +1,1 @@
+export { ElementCardImage } from './ElementCardImage';

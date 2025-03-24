@@ -2,7 +2,7 @@
 
 .PricingPlans {
   &__Content {
-    @include media-desktop {
+    @include media-fullHD {
       padding: 0;
     }
   }

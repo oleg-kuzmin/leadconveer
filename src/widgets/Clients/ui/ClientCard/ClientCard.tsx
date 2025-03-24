@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Image from 'next/image';
+import { ElementCardImage } from '../ElementCardImage';
 import styles from './ClientCard.module.scss';
 
 interface ClientCardProps {
@@ -13,7 +13,7 @@ interface ClientCardProps {
 export function ClientCard({ imgSrc, imgAlt, imgWidth, imgHeight, className }: Readonly<ClientCardProps>) {
   return (
     <div className={cn(styles.ClientCard, className)}>
-      <Image className={styles.ClientCard__Image} src={imgSrc} alt={imgAlt} width={imgWidth} height={imgHeight} />
+      <ElementCardImage src={imgSrc} alt={imgAlt} width={imgWidth} height={imgHeight} />
     </div>
   );
 }

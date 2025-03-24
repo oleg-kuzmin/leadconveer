@@ -1,0 +1,15 @@
+import cn from 'classnames';
+import Image from 'next/image';
+import styles from './ElementCardImage.module.scss';
+
+interface ElementCardImageProps {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className?: string;
+}
+
+export function ElementCardImage({ src, alt, width, height, className }: Readonly<ElementCardImageProps>) {
+  return <Image className={cn(styles.ElementCardImage, className)} src={src} alt={alt} width={width} height={height} />;
+}

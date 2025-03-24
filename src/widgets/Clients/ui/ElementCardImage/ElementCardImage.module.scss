@@ -1,0 +1,12 @@
+@use '@/shared/mixins' as *;
+
+.ElementCardImage {
+  object-fit: contain;
+  vertical-align: top;
+  @include media-initial {
+    scale: 0.5;
+  }
+  @include media-desktop {
+    scale: 1;
+  }
+}
