@@ -1,22 +1,32 @@
 import cn from 'classnames';
-import { CardFooter } from './CardFooter';
-import { CardHeader } from './CardHeader';
-import { CardText } from './CardText';
+import { ElementStar } from '@/shared/ui';
+import { ElementCardFooter } from '../ElementCardFooter';
+import { ElementCardRating } from '../ElementCardRating';
+import { ElementCardText } from '../ElementCardText';
 import styles from './ReviewCard.module.scss';
 
 interface ReviewCardProps {
   rating: string;
-  text: string;
-  alcove: string;
+  children: React.ReactNode;
+  footer: string;
   className?: string;
 }
 
-export function ReviewCard({ rating, text, alcove, className }: Readonly<ReviewCardProps>) {
+export function ReviewCard({ rating, children, footer, className }: Readonly<ReviewCardProps>) {
   return (
     <div className={cn(styles.ReviewCard, className)}>
-      <CardHeader className={styles.ReviewCard__Header} rating={rating} />
-      <CardText className={styles.ReviewCard__Text}>{text}</CardText>
-      <CardFooter>{alcove}</CardFooter>
+      <div className={styles.ReviewCard__Header}>
+        <ElementCardRating rating={rating} />
+        <div className={styles.ReviewCard__Stars}>
+          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
+          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
+          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
+          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
+          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
+        </div>
+      </div>
+      <ElementCardText className={styles.ReviewCard__Text}>{children}</ElementCardText>
+      <ElementCardFooter>{footer}</ElementCardFooter>
     </div>
   );
 }

@@ -1,11 +1,29 @@
 @use '@/shared/mixins' as *;
 
 .Reviews {
+  &__Content {
+    @include media-fullHD {
+      padding: 0;
+    }
+  }
+
   &__Title {
+    margin: 0 auto;
     padding-bottom: 20px;
   }
 
   &__Subtitle {
     max-width: 791px;
+    margin: 0 auto;
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-laptop {
+      padding-bottom: 38px;
+    }
+  }
+
+  &__Cards {
+    padding-bottom: 40px;
   }
 }

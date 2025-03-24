@@ -1,0 +1,35 @@
+@use '@/shared/mixins' as *;
+
+.ElementVideo {
+  position: relative;
+  cursor: pointer;
+
+  &__Item {
+    object-fit: cover;
+    background-color: var(--dark-grey);
+    @include media-initial {
+      aspect-ratio: 580 / 320;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+    @include media-desktop {
+      border-radius: 40px;
+    }
+  }
+
+  &__Button {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &_Play {
+      width: calc(53px / 580px * 100%);
+      height: calc(62px / 320px * 100%);
+      background-image: url('/leadconveer/svg/video-play-icon.svg');
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export { ElementVideoCaption } from './ElementVideoCaption';

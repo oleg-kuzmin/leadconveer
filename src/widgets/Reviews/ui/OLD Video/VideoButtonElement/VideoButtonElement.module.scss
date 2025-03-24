@@ -1,0 +1,36 @@
+@use '@/shared/mixins' as *;
+
+.VideoButtonElement {
+  width: 70px;
+  height: 70px;
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  @include media-initial {
+    background-position: center;
+  }
+  @include media-desktop {
+    background-position: right;
+  }
+
+  &_Play {
+    background-image: url('/leadconveer/svg/video-play-icon.svg');
+    @include media-initial {
+      background-size: 31px;
+    }
+    @include media-desktop {
+      background-size: 53px 62px;
+    }
+  }
+
+  &_Pause {
+    background-image: url('/leadconveer/svg/video-pause-icon.svg');
+    opacity: 0;
+    @include media-initial {
+      background-size: 31px;
+    }
+    @include media-desktop {
+      background-size: 62px;
+    }
+  }
+}

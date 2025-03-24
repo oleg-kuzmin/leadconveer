@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.ElementCardRating {
+  @include media-initial {
+    @include font-bold(29px, 100%, 'Montserrat');
+  }
+  @include media-desktop {
+    @include font-bold(36px, 52px, 'Montserrat');
+  }
+}

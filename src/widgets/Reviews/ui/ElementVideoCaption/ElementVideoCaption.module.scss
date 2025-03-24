@@ -1,0 +1,14 @@
+@use '@/shared/mixins' as *;
+
+.ElementVideoCaption {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @include media-initial {
+    @include font-figma-txt(16px);
+  }
+  @include media-desktop {
+    @include font-figma-txt;
+  }
+}

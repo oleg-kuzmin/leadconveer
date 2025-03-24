@@ -1,0 +1,1 @@
+export { ElementCardFooter } from './ElementCardFooter';

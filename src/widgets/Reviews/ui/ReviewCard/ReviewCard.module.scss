@@ -1,14 +1,39 @@
 @use '@/shared/mixins' as *;
 
 .ReviewCard {
-  width: 430px;
-  min-height: 636px;
-  padding: 40px;
-  border-radius: 30px;
+  width: 100%;
+  max-width: 430px;
   background-color: var(--light-grey);
+  @include media-initial {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  @include media-desktop {
+    min-height: 636px;
+    padding: 40px;
+    border-radius: 30px;
+  }
 
   &__Header {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 20px;
+  }
+
+  &__Stars {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__Star {
+    @include media-initial {
+      width: 29px;
+      height: 29px;
+    }
+    @include media-desktop {
+      width: 49px;
+      height: 49px;
+    }
   }
 
   &__Text {

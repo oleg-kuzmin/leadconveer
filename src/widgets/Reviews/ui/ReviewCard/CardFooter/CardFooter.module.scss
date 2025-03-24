@@ -1,6 +1,0 @@
-@use '@/shared/mixins' as *;
-
-.CardFooter {
-  color: var(--grey);
-  @include font-figma-txt;
-}

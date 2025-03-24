@@ -1,0 +1,11 @@
+@use '@/shared/mixins' as *;
+
+.VideoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @include media-initial {
+    width: 100%;
+    max-width: 580px;
+  }
+}
