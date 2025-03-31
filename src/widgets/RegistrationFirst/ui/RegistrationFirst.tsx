@@ -1,6 +1,6 @@
-import { MainButton, SectionTitle } from '@/shared/ui';
-import { BackgroundImage } from './BackgroundImage';
-import { Content } from './Content';
+import cn from 'classnames';
+import { Content, ElementMainButton, ElementSectionTitle } from '@/shared/ui';
+import { ElementBgImage } from './ElementBgImage';
 import styles from './RegistrationFirst.module.scss';
 
 interface RegistrationFirstProps {
@@ -8,18 +8,19 @@ interface RegistrationFirstProps {
 }
 
 export function RegistrationFirst({ className }: Readonly<RegistrationFirstProps>) {
-  const externalClass = className ? ` ${className}` : '';
-
   return (
-    <div></div>
-    // <section className={styles.RegistrationFirst + externalClass}>
-    //   <Content>
-    //     <SectionTitle className={styles.RegistrationFirst__SectionTitle}>
-    //       Зарегистрируйтесь и добавьте свой проект в систему — начните получать Лидов сегодня!
-    //     </SectionTitle>
-    //     <MainButton text="Зарегистрироваться" />
-    //   </Content>
-    //   <BackgroundImage />
-    // </section>
+    <section className={cn(styles.RegistrationFirst, className)}>
+      <Content>
+        <div className={styles.RegistrationFirst__Container}>
+          <ElementBgImage className={styles.RegistrationFirst__BgImage} />
+          <div className={styles.RegistrationFirst__Text}>
+            <ElementSectionTitle className={styles.RegistrationFirst__SectionTitle}>
+              Зарегистрируйтесь и&nbsp;добавьте свой проект в&nbsp;систему — начните получать Лидов сегодня!
+            </ElementSectionTitle>
+            <ElementMainButton className={styles.RegistrationFirst__MainButton} text="Зарегистрироваться" />
+          </div>
+        </div>
+      </Content>
+    </section>
   );
 }

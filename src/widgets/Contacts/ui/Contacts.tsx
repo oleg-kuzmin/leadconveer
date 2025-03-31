@@ -1,4 +1,5 @@
 import styles from './Contacts.module.scss';
+import cn from 'classnames';
 
 interface ContactsProps {
   className?: string;

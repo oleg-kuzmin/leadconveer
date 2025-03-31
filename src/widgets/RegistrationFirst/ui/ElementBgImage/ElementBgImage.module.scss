@@ -1,9 +1,7 @@
 @use '@/shared/mixins' as *;
 
-.BackgroundImage {
+.ElementBgImage {
   position: relative;
-  width: 683px;
-  height: 403px;
   background-image: url('/leadconveer/images/registration-first-x2.png');
   background-position: center;
   background-size: cover;
@@ -11,7 +9,9 @@
 
   &__Star {
     position: absolute;
-    bottom: 5px;
-    left: 24px;
+    bottom: 1.2%;
+    left: 3.56%;
+    width: calc(88px / 683px * 100%);
+    height: calc(89px / 403px * 100%);
   }
 }

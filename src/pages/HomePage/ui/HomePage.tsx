@@ -5,6 +5,7 @@ import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
 import { LeadTechnology } from '@/widgets/LeadTechnology';
 import { PricingPlans } from '@/widgets/PricingPlans';
+import { RegistrationFirst } from '@/widgets/RegistrationFirst';
 import { Reviews } from '@/widgets/Reviews';
 import styles from './HomePage.module.scss';
 
@@ -20,8 +21,8 @@ export function HomePage() {
         <Clients className={styles.HomePage__Clients} />
         <Reviews className={styles.HomePage__Reviews} />
         <LeadTechnology className={styles.HomePage__LeadTechnology} />
+        <RegistrationFirst className={styles.HomePage__RegistrationFirst} />
       </main>
-      {/* <RegistrationFirst /> */}
       {/* <HowItWorks /> */}
       {/* <Features /> */}
       {/* <RegistrationSecond /> */}

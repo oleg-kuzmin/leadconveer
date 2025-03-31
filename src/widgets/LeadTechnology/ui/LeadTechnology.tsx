@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { Content } from '@/shared/ui';
 import { ElementBgImage } from './ElementBgImage';
 import { TextColumn } from './TextColumn';
@@ -8,10 +9,8 @@ interface LeadTechnologyProps {
 }
 
 export function LeadTechnology({ className }: Readonly<LeadTechnologyProps>) {
-  const externalClass = className ? ` ${className}` : '';
-
   return (
-    <section className={styles.LeadTechnology + externalClass}>
+    <section className={cn(styles.LeadTechnology, className)}>
       <Content className={styles.LeadTechnology__Content}>
         <ElementBgImage className={styles.LeadTechnology__BgImage} />
         <TextColumn className={styles.LeadTechnology__TextColumn} />
