@@ -54,4 +54,13 @@
       padding-top: 121px;
     }
   }
+
+  &__LeadTechnology {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 120px;
+    }
+  }
 }

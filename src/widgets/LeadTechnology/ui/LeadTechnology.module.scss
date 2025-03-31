@@ -2,5 +2,40 @@
 
 .LeadTechnology {
   display: flex;
-  gap: 60px;
+
+  &__Content {
+    display: flex;
+    @include media-initial {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media-desktop {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 60px;
+    }
+  }
+
+  &__BgImage {
+    @include media-initial {
+      width: 100%;
+      height: auto;
+    }
+    @include media-desktop {
+      width: 677px;
+      height: 442px;
+    }
+    @include media-fullHD {
+      margin-left: 14px;
+    }
+  }
+
+  &__TextColumn {
+    @include media-initial {
+      padding-top: 20px;
+    }
+    @include media-desktop {
+      padding-top: 0;
+    }
+  }
 }

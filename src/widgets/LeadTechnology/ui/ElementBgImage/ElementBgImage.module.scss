@@ -1,0 +1,41 @@
+@use '@/shared/mixins' as *;
+
+.ElementBgImage {
+  position: relative;
+  aspect-ratio: 677 / 442;
+  max-width: 677px;
+  background-image: url('/leadconveer/images/technology-x2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__Star1 {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: calc(72px / 677px * 100%);
+    height: calc(72px / 442px * 100%);
+    @include media-desktop {
+      top: -80px;
+      left: 26px;
+    }
+    @include media-fullHD {
+      top: 15px;
+      left: -76px;
+    }
+  }
+
+  &__Star2 {
+    z-index: 1;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: calc(57px / 677px * 100%);
+    height: calc(57px / 442px * 100%);
+    @include media-desktop {
+      right: 26px;
+      bottom: -62px;
+    }
+  }
+}

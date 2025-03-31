@@ -1,0 +1,45 @@
+@use '@/shared/mixins' as *;
+
+.TextColumn {
+  display: flex;
+  flex-direction: column;
+  @include media-initial {
+    padding-top: 20px;
+  }
+  @include media-desktop {
+    padding-top: 0;
+  }
+
+  &__Header {
+    display: flex;
+    gap: 20px;
+    @include media-initial {
+      align-items: center;
+      justify-content: center;
+    }
+    @include media-desktop {
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+  }
+
+  &__Title {
+    text-align: left;
+    @include media-desktop {
+      max-width: 434px;
+    }
+  }
+
+  &__Description {
+    display: flex;
+    flex-direction: column;
+    max-width: 729px;
+    gap: 20px;
+    @include media-initial {
+      padding: 20px 0;
+    }
+    @include media-desktop {
+      padding: 40px 0;
+    }
+  }
+}

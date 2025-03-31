@@ -3,6 +3,7 @@ import { Advantages } from '@/widgets/Advantages';
 import { Clients } from '@/widgets/Clients';
 import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
+import { LeadTechnology } from '@/widgets/LeadTechnology';
 import { PricingPlans } from '@/widgets/PricingPlans';
 import { Reviews } from '@/widgets/Reviews';
 import styles from './HomePage.module.scss';
@@ -18,8 +19,8 @@ export function HomePage() {
         <AdditionalServices className={styles.HomePage__AdditionalServices} />
         <Clients className={styles.HomePage__Clients} />
         <Reviews className={styles.HomePage__Reviews} />
+        <LeadTechnology className={styles.HomePage__LeadTechnology} />
       </main>
-      {/* <LeadTechnology /> */}
       {/* <RegistrationFirst /> */}
       {/* <HowItWorks /> */}
       {/* <Features /> */}
