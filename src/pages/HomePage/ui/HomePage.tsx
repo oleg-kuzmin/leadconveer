@@ -6,6 +6,7 @@ import { Hero } from '@/widgets/Hero';
 import { LeadTechnology } from '@/widgets/LeadTechnology';
 import { PricingPlans } from '@/widgets/PricingPlans';
 import { RegistrationFirst } from '@/widgets/RegistrationFirst';
+import { RegistrationSecond } from '@/widgets/RegistrationSecond';
 import { Reviews } from '@/widgets/Reviews';
 import styles from './HomePage.module.scss';
 
@@ -22,10 +23,10 @@ export function HomePage() {
         <Reviews className={styles.HomePage__Reviews} />
         <LeadTechnology className={styles.HomePage__LeadTechnology} />
         <RegistrationFirst className={styles.HomePage__RegistrationFirst} />
+        <RegistrationSecond className={styles.HomePage__RegistrationSecond} />
       </main>
       {/* <HowItWorks /> */}
       {/* <Features /> */}
-      {/* <RegistrationSecond /> */}
       {/* <Faq /> */}
       {/* <NewEra /> */}
       {/* <Contacts /> */}

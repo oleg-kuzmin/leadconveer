@@ -1,0 +1,1 @@
+export { ElementBgImage } from './ElementBgImage';

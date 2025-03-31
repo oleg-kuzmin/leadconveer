@@ -1,0 +1,25 @@
+@use '@/shared/mixins' as *;
+
+.ElementBgImage {
+  position: relative;
+  background-image: url('/leadconveer/images/registration-second-x2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__Star1 {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: calc(68px / 683px * 100%);
+    height: calc(70px / 403px * 100%);
+  }
+
+  &__Star2 {
+    position: absolute;
+    right: 7.3%;
+    bottom: 8.2%;
+    width: calc(66px / 683px * 100%);
+    height: calc(68px / 403px * 100%);
+  }
+}
