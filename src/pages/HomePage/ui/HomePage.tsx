@@ -26,6 +26,7 @@ export function HomePage() {
         <RegistrationSecond className={styles.HomePage__RegistrationSecond} />
       </main>
       {/* <HowItWorks /> */}
+      {/* <Presentation /> */}
       {/* <Features /> */}
       {/* <Faq /> */}
       {/* <NewEra /> */}
