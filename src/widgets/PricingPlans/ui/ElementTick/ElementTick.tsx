@@ -1,9 +1,9 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import styles from './ElementTick.module.scss';
 
 interface ElementTickProps {
-  theme: theme;
+  theme: Theme;
   className?: string;
 }
 

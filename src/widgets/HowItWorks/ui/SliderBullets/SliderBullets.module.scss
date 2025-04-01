@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.SliderBullets {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

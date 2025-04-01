@@ -19,7 +19,7 @@
   "cssDeclarationSorterOrder": "smacss",
 
   "arrowParens": "avoid",
-  "bracketSameLine": false,
+  "bracketSameLine": true,
   "bracketSpacing": true,
   "jsxSingleQuote": false,
   "printWidth": 120,

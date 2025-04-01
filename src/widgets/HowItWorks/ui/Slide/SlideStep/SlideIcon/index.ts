@@ -1,1 +1,0 @@
-export { SlideIcon } from './SlideIcon';

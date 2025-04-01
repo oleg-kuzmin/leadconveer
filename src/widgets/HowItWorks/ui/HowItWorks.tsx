@@ -1,5 +1,13 @@
+'use client';
+
+import { useRef, useState } from 'react';
+import { SwiperClass } from 'swiper/react';
+import cn from 'classnames';
 import { ISlideObject } from '@/shared/lib/types';
-import { Slide } from './Slide';
+import { Content, ElementSectionTitle } from '@/shared/ui';
+import { HowContainer } from './HowContainer';
+import { HowSlides } from './HowSlides';
+import { SliderBullets } from './SliderBullets';
 import styles from './HowItWorks.module.scss';
 
 interface HowItWorksProps {
@@ -50,12 +58,27 @@ const slides: ISlideObject[] = [
 ];
 
 export function HowItWorks({ className }: Readonly<HowItWorksProps>) {
-  const externalClass = className ? ` ${className}` : '';
+  const [indexActiveSlide, setIndexActiveSlide] = useState(0);
+  const swiperRef = useRef<SwiperClass | null>(null);
+
+  const handleClickBullet = (index: number) => {
+    swiperRef.current?.slideToLoop(index, 1000);
+  };
 
   return (
-    <section className={styles.HowItWorks + externalClass}>
-      {/* <SectionTitle>Как это работает?</SectionTitle> */}
-      <Slide slideObject={slides[0]} />
+    <section className={cn(styles.HowItWorks, className)}>
+      <Content>
+        <HowContainer>
+          <ElementSectionTitle className={styles.HowItWorks__Title}>Как это работает?</ElementSectionTitle>
+          <HowSlides swiperRef={swiperRef} slides={slides} setIndexActiveSlide={setIndexActiveSlide} />
+          <SliderBullets
+            onClick={handleClickBullet}
+            className={styles.HowItWorks__SliderBullets}
+            indexActive={indexActiveSlide}
+            length={slides.length}
+          />
+        </HowContainer>
+      </Content>
     </section>
   );
 }

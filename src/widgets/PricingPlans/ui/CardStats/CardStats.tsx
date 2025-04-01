@@ -1,11 +1,11 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import { CardStat } from '../CardStat';
 import styles from './CardStats.module.scss';
 
 interface CardStatsProps {
   stats: string[];
-  theme: theme;
+  theme: Theme;
   className?: string;
 }
 

@@ -1,0 +1,31 @@
+@use '@/shared/mixins' as *;
+
+.SlideStepIcon {
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include media-initial {
+    width: 36px;
+    height: 36px;
+  }
+  @include media-desktop {
+    width: 72px;
+    height: 72px;
+  }
+  &_01 {
+    background-image: url('/leadconveer/svg/how-01.svg');
+  }
+  &_02 {
+    background-image: url('/leadconveer/svg/how-02.svg');
+  }
+  &_03 {
+    background-image: url('/leadconveer/svg/how-03.svg');
+  }
+  &_04 {
+    background-image: url('/leadconveer/svg/how-04.svg');
+  }
+  &_05 {
+    background-image: url('/leadconveer/svg/how-05.svg');
+  }
+}

@@ -1,10 +1,10 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import styles from './ElementCardTitle.module.scss';
 
 interface ElementCardTitleProps {
   children: React.ReactNode;
-  theme: theme;
+  theme: Theme;
   className?: string;
 }
 

@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.SlideElement {
+  display: flex;
+  pointer-events: none;
+  @include media-initial {
+    flex-direction: column;
+    gap: 20px;
+  }
+  @include media-desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1480px;
+    gap: 0;
+  }
+}

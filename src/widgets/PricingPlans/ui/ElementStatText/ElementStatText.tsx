@@ -1,10 +1,10 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import styles from './ElementStatText.module.scss';
 
 interface ElementStatTextProps {
   children: React.ReactNode;
-  theme: theme;
+  theme: Theme;
   bold?: boolean;
   className?: string;
 }

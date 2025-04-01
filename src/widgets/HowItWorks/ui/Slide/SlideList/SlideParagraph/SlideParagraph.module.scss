@@ -1,6 +1,0 @@
-@use '@/shared/mixins' as *;
-
-.SlideParagraph {
-  color: var(--dark-grey);
-  @include font-figma-txt;
-}

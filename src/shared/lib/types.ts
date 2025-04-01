@@ -1,8 +1,12 @@
+export type StepSlide = '01' | '02' | '03' | '04' | '05';
+
 export interface ISlideObject {
-  step: '01' | '02' | '03' | '04' | '05';
+  step: StepSlide;
   title: string;
   isOrdered: boolean;
   list: string[];
 }
 
-export type theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark';
+
+export type HandleClickSliderBullet = (index: number) => void;

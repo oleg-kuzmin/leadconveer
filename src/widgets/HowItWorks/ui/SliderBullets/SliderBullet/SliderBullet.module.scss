@@ -1,0 +1,19 @@
+@use '@/shared/mixins' as *;
+
+.SliderBullet {
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  cursor: pointer;
+  transition: background-color var(--time-hover);
+  @include media-initial {
+    width: 15px;
+    height: 15px;
+  }
+  @include media-desktop {
+    width: 30px;
+    height: 30px;
+  }
+  &_Active {
+    background-color: var(--orange-juice);
+  }
+}

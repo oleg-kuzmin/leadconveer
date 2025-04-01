@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.SlideHeader {
+  display: flex;
+  flex-direction: column;
+  max-width: 659px;
+  @include media-initial {
+    gap: 20px;
+  }
+  @include media-desktop {
+    gap: 30px;
+  }
+}

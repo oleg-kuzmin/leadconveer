@@ -1,11 +1,11 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import { ElementStatText } from '../ElementStatText';
 import { ElementTick } from '../ElementTick';
 import styles from './CardStat.module.scss';
 
 interface CardStatProps {
-  theme: theme;
+  theme: Theme;
   children: React.ReactNode;
   bold?: boolean;
   className?: string;

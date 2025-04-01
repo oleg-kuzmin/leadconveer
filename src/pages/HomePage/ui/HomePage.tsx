@@ -3,6 +3,7 @@ import { Advantages } from '@/widgets/Advantages';
 import { Clients } from '@/widgets/Clients';
 import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
+import { HowItWorks } from '@/widgets/HowItWorks';
 import { LeadTechnology } from '@/widgets/LeadTechnology';
 import { PricingPlans } from '@/widgets/PricingPlans';
 import { RegistrationFirst } from '@/widgets/RegistrationFirst';
@@ -23,9 +24,9 @@ export function HomePage() {
         <Reviews className={styles.HomePage__Reviews} />
         <LeadTechnology className={styles.HomePage__LeadTechnology} />
         <RegistrationFirst className={styles.HomePage__RegistrationFirst} />
-        <RegistrationSecond className={styles.HomePage__RegistrationSecond} />
+        <HowItWorks className={styles.HomePage__HowItWorks} />
+        {/* <RegistrationSecond className={styles.HomePage__RegistrationSecond} /> */}
       </main>
-      {/* <HowItWorks /> */}
       {/* <Presentation /> */}
       {/* <Features /> */}
       {/* <Faq /> */}

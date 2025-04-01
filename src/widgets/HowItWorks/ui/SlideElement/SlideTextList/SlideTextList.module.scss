@@ -1,0 +1,24 @@
+@use '@/shared/mixins' as *;
+
+.SlideTextList {
+  display: flex;
+  flex-direction: column;
+  max-width: 730px;
+  @include media-initial {
+    gap: 10px;
+    @include font-figma-txt(16px);
+  }
+  @include media-desktop {
+    gap: 20px;
+    @include font-figma-txt;
+  }
+  &_Ordered {
+    list-style: decimal;
+    @include media-initial {
+      padding-left: 20px;
+    }
+    @include media-desktop {
+      padding-left: 35px;
+    }
+  }
+}

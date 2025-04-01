@@ -1,1 +1,0 @@
-export { SlideNumber } from './SlideNumber';

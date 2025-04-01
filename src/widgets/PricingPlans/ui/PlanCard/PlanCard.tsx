@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import { ElementMainButton, ElementStar } from '@/shared/ui';
 import { CardStats } from '../CardStats';
 import { ElementCardDescription } from '../ElementCardDescription';
@@ -14,7 +14,7 @@ interface PlanCardProps {
   price: string;
   description: string;
   stats: string[];
-  theme: theme;
+  theme: Theme;
   className?: string;
 }
 

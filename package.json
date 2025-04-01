@@ -11,22 +11,23 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
-    "next": "15.2.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "next": "15.2.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@eslint/eslintrc": "^3.3.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.2",
+    "@types/node": "^22.13.15",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "15.2.4",
     "postcss": "^8.5.3",
     "prettier-plugin-css-order": "^2.1.2",
-    "sass": "^1.85.1",
-    "steiger": "^0.5.5",
-    "typescript": "^5"
+    "sass": "^1.86.1",
+    "steiger": "^0.5.6",
+    "typescript": "^5.8.2"
   }
 }

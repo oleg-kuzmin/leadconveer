@@ -1,0 +1,11 @@
+@use '@/shared/mixins' as *;
+
+.HowContainer {
+  background-color: var(--light-grey);
+  @include media-initial {
+    border-radius: 10px;
+  }
+  @include media-desktop {
+    border-radius: 40px;
+  }
+}

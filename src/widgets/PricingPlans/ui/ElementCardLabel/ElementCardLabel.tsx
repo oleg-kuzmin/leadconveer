@@ -1,10 +1,10 @@
 import cn from 'classnames';
-import { theme } from '@/shared/lib/types';
+import { Theme } from '@/shared/lib/types';
 import styles from './ElementCardLabel.module.scss';
 
 interface ElementCardLabelProps {
   text: string;
-  theme: theme;
+  theme: Theme;
   className?: string;
 }
 

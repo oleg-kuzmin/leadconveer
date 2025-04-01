@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.SlideTitle {
+  @include media-initial {
+    @include font-figma-H2(24px);
+  }
+  @include media-desktop {
+    @include font-figma-H2;
+  }
+}

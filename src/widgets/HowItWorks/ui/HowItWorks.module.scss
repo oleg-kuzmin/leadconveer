@@ -1,5 +1,21 @@
 @use '@/shared/mixins' as *;
 
 .HowItWorks {
+  &__Title {
+    @include media-initial {
+      padding: 20px 0;
+    }
+    @include media-desktop {
+      padding: 80px 0 60px;
+    }
+  }
 
+  &__SliderBullets {
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-desktop {
+      padding-bottom: 80px;
+    }
+  }
 }

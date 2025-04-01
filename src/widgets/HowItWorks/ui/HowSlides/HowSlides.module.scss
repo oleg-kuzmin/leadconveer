@@ -1,0 +1,23 @@
+@use '@/shared/mixins' as *;
+
+.HowSlides {
+  height: 100%;
+  @include media-initial {
+    padding: 0 20px 20px;
+  }
+  @include media-desktop {
+    padding: 0 0 60px;
+  }
+
+  &__Swiper {
+    width: 100%;
+    max-width: 1480px;
+    height: 100%;
+  }
+
+  &__Slide {
+    width: 100%;
+    height: auto;
+    cursor: grab;
+  }
+}

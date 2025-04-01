@@ -1,6 +1,0 @@
-@use '@/shared/mixins' as *;
-
-.SlideTitle {
-  color: var(--dark-grey);
-  @include font-figma-H2;
-}
