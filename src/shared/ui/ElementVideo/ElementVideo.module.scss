@@ -2,15 +2,15 @@
 
 .ElementVideo {
   position: relative;
+  width: 100%;
   cursor: pointer;
 
   &__Item {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     background-color: var(--dark-grey);
     @include media-initial {
-      aspect-ratio: 580 / 320;
-      width: 100%;
-      height: auto;
       border-radius: 20px;
     }
     @include media-desktop {
@@ -18,18 +18,16 @@
     }
   }
 
-  &__Button {
+  &__ButtonPlay {
     position: absolute;
+    min-width: 31px;
+    min-height: 37px;
     margin: auto;
     inset: 0;
+    background-image: url('/leadconveer/svg/video-play-icon.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    &_Play {
-      width: calc(53px / 580px * 100%);
-      height: calc(62px / 320px * 100%);
-      background-image: url('/leadconveer/svg/video-play-icon.svg');
-    }
   }
 }

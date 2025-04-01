@@ -5,6 +5,7 @@ import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
 import { HowItWorks } from '@/widgets/HowItWorks';
 import { LeadTechnology } from '@/widgets/LeadTechnology';
+import { Presentation } from '@/widgets/Presentation';
 import { PricingPlans } from '@/widgets/PricingPlans';
 import { RegistrationFirst } from '@/widgets/RegistrationFirst';
 import { RegistrationSecond } from '@/widgets/RegistrationSecond';
@@ -26,8 +27,8 @@ export function HomePage() {
         <RegistrationFirst className={styles.HomePage__RegistrationFirst} />
         <HowItWorks className={styles.HomePage__HowItWorks} />
         {/* <RegistrationSecond className={styles.HomePage__RegistrationSecond} /> */}
+        <Presentation className={styles.HomePage__Presentation} />
       </main>
-      {/* <Presentation /> */}
       {/* <Features /> */}
       {/* <Faq /> */}
       {/* <NewEra /> */}

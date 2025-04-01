@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementVideo } from '../ElementVideo';
+import { ElementVideo } from '@/shared/ui';
 import { ElementVideoCaption } from '../ElementVideoCaption';
 import styles from './VideoContainer.module.scss';
 
@@ -14,7 +14,7 @@ interface VideoContainerProps {
 export function VideoContainer({ src, type, caption, poster, className }: Readonly<VideoContainerProps>) {
   return (
     <div className={cn(styles.VideoContainer, className)}>
-      <ElementVideo src={src} type={type} poster={poster} />
+      <ElementVideo src={src} type={type} poster={poster} width={580} height={320} />
       <ElementVideoCaption>{caption}</ElementVideoCaption>
     </div>
   );
