@@ -1,0 +1,1 @@
+export { FeatureSmallCard } from './FeatureSmallCard';

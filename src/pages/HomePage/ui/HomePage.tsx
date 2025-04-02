@@ -1,6 +1,7 @@
 import { AdditionalServices } from '@/widgets/AdditionalServices';
 import { Advantages } from '@/widgets/Advantages';
 import { Clients } from '@/widgets/Clients';
+import { Features } from '@/widgets/Features';
 import { Header } from '@/widgets/Header';
 import { Hero } from '@/widgets/Hero';
 import { HowItWorks } from '@/widgets/HowItWorks';
@@ -26,10 +27,10 @@ export function HomePage() {
         <LeadTechnology className={styles.HomePage__LeadTechnology} />
         <RegistrationFirst className={styles.HomePage__RegistrationFirst} />
         <HowItWorks className={styles.HomePage__HowItWorks} />
-        {/* <RegistrationSecond className={styles.HomePage__RegistrationSecond} /> */}
         <Presentation className={styles.HomePage__Presentation} />
+        <Features className={styles.HomePage__Features} />
+        <RegistrationSecond className={styles.HomePage__RegistrationSecond} />
       </main>
-      {/* <Features /> */}
       {/* <Faq /> */}
       {/* <NewEra /> */}
       {/* <Contacts /> */}
@@ -37,3 +38,7 @@ export function HomePage() {
     </>
   );
 }
+
+/*
+Features+
+*/

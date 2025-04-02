@@ -73,15 +73,6 @@
     }
   }
 
-  &__RegistrationSecond {
-    @include media-initial {
-      padding-top: 40px;
-    }
-    @include media-desktop {
-      padding-top: 121px;
-    }
-  }
-
   &__HowItWorks {
     @include media-initial {
       padding-top: 40px;
@@ -97,6 +88,24 @@
     }
     @include media-desktop {
       padding-top: 121px;
+    }
+  }
+
+  &__Features {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 119px;
+    }
+  }
+
+  &__RegistrationSecond {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 120px;
     }
   }
 }

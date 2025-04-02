@@ -1,0 +1,27 @@
+@use '@/shared/mixins' as *;
+
+.FeatureSmallCard {
+  width: 100%;
+  max-width: 340px;
+  background-color: var(--light-grey);
+  @include media-initial {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  @include media-tablet {
+    padding: 30px;
+  }
+  @include media-desktop {
+    min-height: 420px;
+    border-radius: 40px;
+  }
+
+  &__Icon {
+    @include media-initial {
+      margin-bottom: 10px;
+    }
+    @include media-desktop {
+      margin-bottom: 20px;
+    }
+  }
+}

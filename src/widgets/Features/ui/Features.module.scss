@@ -1,0 +1,35 @@
+@use '@/shared/mixins' as *;
+
+.Features {
+  &__Content {
+    @include media-fullHD {
+      padding: 0;
+    }
+  }
+
+  &__Title {
+    max-width: 615px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  &__Subtitle {
+    max-width: 885px;
+    margin: 0 auto;
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-laptop {
+      padding-bottom: 39px;
+    }
+  }
+
+  &__BigCards {
+    @include media-initial {
+      padding-bottom: 20px;
+    }
+    @include media-desktop {
+      padding-bottom: 27px;
+    }
+  }
+}

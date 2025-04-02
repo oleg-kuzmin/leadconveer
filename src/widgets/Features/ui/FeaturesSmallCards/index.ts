@@ -1,0 +1,1 @@
+export { FeaturesSmallCards } from './FeaturesSmallCards';

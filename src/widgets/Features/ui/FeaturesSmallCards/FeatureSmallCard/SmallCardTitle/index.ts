@@ -1,0 +1,1 @@
+export { SmallCardTitle } from './SmallCardTitle';

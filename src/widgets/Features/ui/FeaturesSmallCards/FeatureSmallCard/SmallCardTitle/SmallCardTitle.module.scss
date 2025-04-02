@@ -1,0 +1,11 @@
+@use '@/shared/mixins' as *;
+
+.SmallCardTitle {
+  color: var(--grey);
+  @include media-initial {
+    @include font-figma-txt-bold(16px);
+  }
+  @include media-desktop {
+    @include font-figma-txt-bold;
+  }
+}
