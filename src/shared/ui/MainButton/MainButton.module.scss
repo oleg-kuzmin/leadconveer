@@ -1,6 +1,6 @@
 @use '@/shared/mixins' as *;
 
-.ElementMainButton {
+.MainButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,8 +9,8 @@
   color: var(--white);
   text-transform: uppercase;
   cursor: pointer;
-  @include effect-hover-ElementMainButton;
-  @include effect-focus-ElementMainButton;
+  @include effect-hover-MainButton;
+  @include effect-focus-MainButton;
 
   @include media-initial {
     height: 50px;

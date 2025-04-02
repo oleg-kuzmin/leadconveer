@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { Content, ElementMainButton, ElementSectionTitle } from '@/shared/ui';
+import { Content, MainButton, SectionTitle } from '@/shared/ui';
 import { ElementBgImage } from './ElementBgImage';
 import styles from './RegistrationSecond.module.scss';
 
@@ -14,10 +14,10 @@ export function RegistrationSecond({ className }: Readonly<RegistrationSecondPro
         <div className={styles.RegistrationSecond__Container}>
           <ElementBgImage className={styles.RegistrationSecond__BgImage} />
           <div className={styles.RegistrationSecond__Text}>
-            <ElementSectionTitle className={styles.RegistrationSecond__SectionTitle}>
+            <SectionTitle className={styles.RegistrationSecond__SectionTitle}>
               Давайте принесём результат Вашему бизнесу? Завалите своей отдел продаж Лидами!
-            </ElementSectionTitle>
-            <ElementMainButton className={styles.RegistrationSecond__MainButton} text="Зарегистрироваться" />
+            </SectionTitle>
+            <MainButton className={styles.RegistrationSecond__MainButton} text="Зарегистрироваться" />
           </div>
         </div>
       </Content>

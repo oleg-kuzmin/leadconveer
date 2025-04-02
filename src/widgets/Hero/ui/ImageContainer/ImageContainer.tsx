@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementStar } from '@/shared/ui';
+import { StarIcon } from '@/shared/ui';
 import { ElementImage } from '../ElementImage';
 import styles from './ImageContainer.module.scss';
 
@@ -11,8 +11,8 @@ export function ImageContainer({ className }: Readonly<ImageContainerProps>) {
   return (
     <div className={cn(styles.ImageContainer, className)}>
       <ElementImage className={styles.ImageContainer__Image} />
-      <ElementStar className={styles.ImageContainer__Star1} icon="hero1" />
-      <ElementStar className={styles.ImageContainer__Star2} icon="hero2" />
+      <StarIcon className={styles.ImageContainer__Star1} icon="hero1" />
+      <StarIcon className={styles.ImageContainer__Star2} icon="hero2" />
     </div>
   );
 }

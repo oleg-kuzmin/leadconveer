@@ -1,1 +1,0 @@
-export { ElementStar } from './ElementStar';

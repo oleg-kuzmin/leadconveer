@@ -1,1 +1,0 @@
-export { ElementSectionTitle } from './ElementSectionTitle';

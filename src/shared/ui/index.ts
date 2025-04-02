@@ -1,7 +1,7 @@
+export { AccentText } from './AccentText';
 export { Content } from './Content';
-export { ElementAccentText } from './ElementAccentText';
-export { ElementMainButton } from './ElementMainButton';
-export { ElementSectionSubtitle } from './ElementSectionSubtitle';
-export { ElementSectionTitle } from './ElementSectionTitle';
-export { ElementStar } from './ElementStar';
-export { ElementVideo } from './ElementVideo';
+export { MainButton } from './MainButton';
+export { SectionSubtitle } from './SectionSubtitle';
+export { SectionTitle } from './SectionTitle';
+export { StarIcon } from './StarIcon';
+export { Video } from './Video';

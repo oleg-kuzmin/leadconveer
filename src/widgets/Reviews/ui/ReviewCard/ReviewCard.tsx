@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementStar } from '@/shared/ui';
+import { StarIcon } from '@/shared/ui';
 import { ElementCardFooter } from '../ElementCardFooter';
 import { ElementCardRating } from '../ElementCardRating';
 import { ElementCardText } from '../ElementCardText';
@@ -18,11 +18,11 @@ export function ReviewCard({ rating, children, footer, className }: Readonly<Rev
       <div className={styles.ReviewCard__Header}>
         <ElementCardRating rating={rating} />
         <div className={styles.ReviewCard__Stars}>
-          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
-          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
-          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
-          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
-          <ElementStar className={styles.ReviewCard__Star} icon="reviewCard" />
+          <StarIcon className={styles.ReviewCard__Star} icon="reviewCard" />
+          <StarIcon className={styles.ReviewCard__Star} icon="reviewCard" />
+          <StarIcon className={styles.ReviewCard__Star} icon="reviewCard" />
+          <StarIcon className={styles.ReviewCard__Star} icon="reviewCard" />
+          <StarIcon className={styles.ReviewCard__Star} icon="reviewCard" />
         </div>
       </div>
       <ElementCardText className={styles.ReviewCard__Text}>{children}</ElementCardText>

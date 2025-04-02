@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { Theme } from '@/shared/lib/types';
-import { ElementMainButton, ElementStar } from '@/shared/ui';
+import { MainButton, StarIcon } from '@/shared/ui';
 import { CardStats } from '../CardStats';
 import { ElementCardDescription } from '../ElementCardDescription';
 import { ElementCardLabel } from '../ElementCardLabel';
@@ -36,7 +36,7 @@ export function PlanCard({ name, title, price, description, stats, theme, classN
     <div className={cn(styles.PlanCard, classTheme, className)}>
       <div className={styles.PlanCard__Header}>
         <ElementCardLabel text={name} theme={theme} />
-        <ElementStar
+        <StarIcon
           className={styles.PlanCard__Star}
           icon={theme === 'light' ? 'pricingPlanCard' : 'pricingPlanCardDark'}
         />
@@ -49,7 +49,7 @@ export function PlanCard({ name, title, price, description, stats, theme, classN
         <ElementCardDescription className={styles.PlanCard__Description}>{description}</ElementCardDescription>
         <CardStats className={styles.PlanCard__Stats} stats={stats} theme={theme} />
       </div>
-      <ElementMainButton className={styles.PlanCard__Button} text="купить" />
+      <MainButton className={styles.PlanCard__Button} text="купить" />
     </div>
   );
 }

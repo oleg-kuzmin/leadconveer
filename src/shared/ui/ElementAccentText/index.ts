@@ -1,1 +1,0 @@
-export { ElementAccentText } from './ElementAccentText';

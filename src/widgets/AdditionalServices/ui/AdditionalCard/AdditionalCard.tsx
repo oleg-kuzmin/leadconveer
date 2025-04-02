@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementMainButton, ElementStar } from '@/shared/ui';
+import { MainButton, StarIcon } from '@/shared/ui';
 import { ElementCardPrice } from '../ElementCardPrice';
 import { ElementCardTitle } from '../ElementCardTitle';
 import styles from './AdditionalCard.module.scss';
@@ -16,9 +16,9 @@ export function AdditionalCard({ title, price, className }: Readonly<AdditionalC
       <ElementCardTitle className={styles.AdditionalCard__Title}>{title}</ElementCardTitle>
       <div>
         <ElementCardPrice className={styles.AdditionalCard__Price} price={price} />
-        <ElementMainButton text="купить" />
+        <MainButton text="купить" />
       </div>
-      <ElementStar className={styles.AdditionalCard__Star} icon="additionalServiceCard" />
+      <StarIcon className={styles.AdditionalCard__Star} icon="additionalServiceCard" />
     </div>
   );
 }

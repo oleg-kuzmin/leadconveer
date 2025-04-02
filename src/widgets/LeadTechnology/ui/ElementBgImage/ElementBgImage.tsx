@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementStar } from '@/shared/ui';
+import { StarIcon } from '@/shared/ui';
 import styles from './ElementBgImage.module.scss';
 
 interface ElementBgImageProps {
@@ -9,8 +9,8 @@ interface ElementBgImageProps {
 export function ElementBgImage({ className }: Readonly<ElementBgImageProps>) {
   return (
     <div className={cn(styles.ElementBgImage, className)}>
-      <ElementStar icon="technology1" className={styles.ElementBgImage__Star1} />
-      <ElementStar icon="technology2" className={styles.ElementBgImage__Star2} />
+      <StarIcon icon="technology1" className={styles.ElementBgImage__Star1} />
+      <StarIcon icon="technology2" className={styles.ElementBgImage__Star2} />
     </div>
   );
 }

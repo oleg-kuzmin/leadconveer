@@ -1,6 +1,6 @@
 @use '@/shared/mixins' as *;
 
-.ElementSectionSubtitle {
+.SectionSubtitle {
   color: var(--grey);
   text-align: center;
   @include media-initial {

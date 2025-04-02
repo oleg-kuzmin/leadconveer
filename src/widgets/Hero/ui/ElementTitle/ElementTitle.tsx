@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementAccentText } from '@/shared/ui';
+import { AccentText } from '@/shared/ui';
 import styles from './ElementTitle.module.scss';
 
 interface ElementTitleProps {
@@ -9,7 +9,7 @@ interface ElementTitleProps {
 export function ElementTitle({ className }: Readonly<ElementTitleProps>) {
   return (
     <h1 className={cn(styles.ElementTitle, className)}>
-      <ElementAccentText>Лидогенерация</ElementAccentText>
+      <AccentText>Лидогенерация</AccentText>
       <span> для&nbsp;бизнеса </span>
     </h1>
   );

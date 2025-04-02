@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementMainButton } from '@/shared/ui';
+import { MainButton } from '@/shared/ui';
 import { ElementSmile } from '../ElementSmile';
 import { ElementSubtitle } from '../ElementSubtitle';
 import { ElementTitle } from '../ElementTitle';
@@ -17,7 +17,7 @@ export function Text({ className }: Readonly<TextProps>) {
         <ElementSubtitle className={styles.Text__Subtitle} />
         <ElementSmile />
       </div>
-      <ElementMainButton className={styles.Text__Button} text="Выбрать пакет лидов" />
+      <MainButton className={styles.Text__Button} text="Выбрать пакет лидов" />
     </div>
   );
 }

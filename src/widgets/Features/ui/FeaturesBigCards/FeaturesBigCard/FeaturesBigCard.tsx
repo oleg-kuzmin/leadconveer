@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementStar } from '@/shared/ui';
+import { StarIcon } from '@/shared/ui';
 import { BigCardNumber } from './BigCardNumber';
 import { BigCardText } from './BigCardText';
 import styles from './FeaturesBigCard.module.scss';
@@ -15,7 +15,7 @@ export function FeaturesBigCard({ number, text, className }: Readonly<FeaturesBi
     <li className={cn(styles.FeaturesBigCard, className)}>
       <BigCardNumber className={styles.FeaturesBigCard__Number}>{number}</BigCardNumber>
       <BigCardText>{text}</BigCardText>
-      <ElementStar className={styles.FeaturesBigCard__Star} icon="featureCard" />
+      <StarIcon className={styles.FeaturesBigCard__Star} icon="featureCard" />
     </li>
   );
 }

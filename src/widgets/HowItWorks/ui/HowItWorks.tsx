@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { SwiperClass } from 'swiper/react';
 import cn from 'classnames';
 import { ISlideObject } from '@/shared/lib/types';
-import { Content, ElementSectionTitle } from '@/shared/ui';
+import { Content, SectionTitle } from '@/shared/ui';
 import { HowContainer } from './HowContainer';
 import { HowSlides } from './HowSlides';
 import { SliderBullets } from './SliderBullets';
@@ -69,7 +69,7 @@ export function HowItWorks({ className }: Readonly<HowItWorksProps>) {
     <section className={cn(styles.HowItWorks, className)}>
       <Content>
         <HowContainer>
-          <ElementSectionTitle className={styles.HowItWorks__Title}>Как это работает?</ElementSectionTitle>
+          <SectionTitle className={styles.HowItWorks__Title}>Как это работает?</SectionTitle>
           <HowSlides swiperRef={swiperRef} slides={slides} setIndexActiveSlide={setIndexActiveSlide} />
           <SliderBullets
             onClick={handleClickBullet}

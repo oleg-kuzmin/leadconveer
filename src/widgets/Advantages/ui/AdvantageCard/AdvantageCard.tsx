@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementStar } from '@/shared/ui';
+import { StarIcon } from '@/shared/ui';
 import { ElementCardBg } from '../ElementCardBg';
 import { ElementCardImage } from '../ElementCardImage';
 import { ElementCardSubtitle } from '../ElementCardSubtitle';
@@ -20,7 +20,7 @@ export function AdvantageCard({ title, text, imgSrc, imgAlt, className }: Readon
       <div className={styles.AdvantageCard__Description}>
         <div className={styles.AdvantageCard__Header}>
           <ElementCardTitle text={title} />
-          <ElementStar className={styles.AdvantageCard__Star} icon="advantageCard" />
+          <StarIcon className={styles.AdvantageCard__Star} icon="advantageCard" />
         </div>
         <ElementCardSubtitle text={text} />
       </div>

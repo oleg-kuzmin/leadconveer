@@ -2,9 +2,9 @@
 
 import { useRef, useState } from 'react';
 import cn from 'classnames';
-import styles from './ElementVideo.module.scss';
+import styles from './Video.module.scss';
 
-interface ElementVideoProps {
+interface VideoProps {
   width: number;
   height: number;
   src: string;
@@ -13,7 +13,7 @@ interface ElementVideoProps {
   className?: string;
 }
 
-export function ElementVideo({ src, type, poster, width, height, className }: Readonly<ElementVideoProps>) {
+export function Video({ src, type, poster, width, height, className }: Readonly<VideoProps>) {
   const videoRef = useRef<null | HTMLVideoElement>(null);
   const [isPlayed, setIsPlayed] = useState(false);
 
@@ -44,15 +44,15 @@ export function ElementVideo({ src, type, poster, width, height, className }: Re
 
   const buttonPlay = (
     <button
-      className={cn(styles.ElementVideo__ButtonPlay)}
+      className={cn(styles.Video__ButtonPlay)}
       onClick={handlePlayVideo}
       style={{ width: `calc(53 / ${width} * 100%)`, height: `calc(62 / ${height} * 100%)` }}></button>
   );
 
   return (
-    <div className={cn(styles.ElementVideo, className)} onClick={handlePlayVideo} style={{ maxWidth: `${width}px` }}>
+    <div className={cn(styles.Video, className)} onClick={handlePlayVideo} style={{ maxWidth: `${width}px` }}>
       <video
-        className={styles.ElementVideo__Item}
+        className={styles.Video__Item}
         style={{ aspectRatio: `${width}/${height}` }}
         preload="none"
         poster={poster}

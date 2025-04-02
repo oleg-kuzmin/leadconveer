@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ElementAccentText, ElementSectionTitle } from '@/shared/ui';
+import { AccentText, SectionTitle } from '@/shared/ui';
 import { ElementSmile } from '../ElementSmile';
 import { ElementSubtitle } from '../ElementSubtitle';
 import styles from './TextColumn.module.scss';
@@ -12,9 +12,9 @@ export function TextColumn({ className }: Readonly<TextColumnProps>) {
   return (
     <div className={cn(styles.TextColumn, className)}>
       <div className={styles.TextColumn__Header}>
-        <ElementSectionTitle className={styles.TextColumn__Title}>
-          Технология <ElementAccentText>«Лид&nbsp;Конвейер»</ElementAccentText>
-        </ElementSectionTitle>
+        <SectionTitle className={styles.TextColumn__Title}>
+          Технология <AccentText>«Лид&nbsp;Конвейер»</AccentText>
+        </SectionTitle>
         <ElementSmile />
       </div>
       <div className={styles.TextColumn__Description}>
