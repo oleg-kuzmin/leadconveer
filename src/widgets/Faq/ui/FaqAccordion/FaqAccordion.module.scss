@@ -1,0 +1,15 @@
+@use '@/shared/mixins' as *;
+
+.FaqAccordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include media-initial {
+    max-width: 600px;
+    gap: 10px;
+  }
+  @include media-desktop {
+    max-width: 880px;
+    gap: 20px;
+  }
+}

@@ -108,4 +108,13 @@
       padding-top: 120px;
     }
   }
+
+  &__Faq {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 121px;
+    }
+  }
 }

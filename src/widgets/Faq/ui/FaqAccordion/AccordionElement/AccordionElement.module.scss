@@ -1,0 +1,6 @@
+@use '@/shared/mixins' as *;
+
+.AccordionElement {
+  display: flex;
+  flex-direction: column;
+}

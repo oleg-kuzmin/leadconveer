@@ -1,0 +1,53 @@
+@use '@/shared/mixins' as *;
+
+.AccordionElementButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid transparent;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--time-hover);
+  @include media-initial {
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    @include font-figma-txt(16px);
+  }
+  @include media-desktop {
+    height: 138px;
+    padding: 40px;
+    gap: 60px;
+    border-radius: 30px;
+    @include font-figma-txt;
+  }
+  @media screen and (hover: hover) {
+    &:hover:not(.AccordionElementButton_Active) {
+      border-color: var(--orange-juice);
+    }
+    &:hover:not(.AccordionElementButton_Active) .AccordionElementButton__Icon path {
+      stroke: var(--orange-juice);
+    }
+  }
+
+  &_Active {
+    border-color: var(--grey);
+  }
+
+  &__Icon {
+    flex-shrink: 0;
+    & path {
+      transition: stroke var(--time-hover);
+    }
+    @include media-initial {
+      width: 25px;
+      height: 25px;
+    }
+    @include media-desktop {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

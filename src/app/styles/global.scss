@@ -21,10 +21,10 @@
 
   // Time
   --time-hover: 300ms;
+  --time-accordion: 500ms;
 }
 
 body {
-  min-height: 100vh; //! delete
   margin: 0 auto;
   background-color: var(--white);
   color: var(--dark-grey);

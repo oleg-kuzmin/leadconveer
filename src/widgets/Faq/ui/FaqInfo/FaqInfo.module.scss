@@ -1,0 +1,15 @@
+@use '@/shared/mixins' as *;
+
+.FaqInfo {
+  display: flex;
+  gap: 21px;
+  @include media-initial {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include media-desktop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

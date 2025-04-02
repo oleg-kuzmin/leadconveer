@@ -1,0 +1,41 @@
+@use '@/shared/mixins' as *;
+
+.AccordionElementPanel {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--light-grey);
+  color: var(--black);
+  transition:
+    max-height var(--time-accordion) ease-out,
+    margin-top var(--time-accordion) ease-out;
+  @include media-initial {
+    border-radius: 10px;
+    @include font-figma-txt(16px);
+  }
+  @include media-desktop {
+    border-radius: 40px;
+    @include font-figma-txt;
+  }
+  &_Active {
+    max-height: 400px;
+    @include media-initial {
+      margin-top: 10px;
+    }
+    @include media-desktop {
+      margin-top: 20px;
+    }
+  }
+
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    @include media-initial {
+      padding: 20px;
+      gap: 10px;
+    }
+    @include media-desktop {
+      padding: 40px;
+      gap: 29px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use '@/shared/mixins' as *;
+
+.FaqBgImage {
+  aspect-ratio: 879 / 581;
+  width: 100%;
+  background-image: url('/leadconveer/images/faq-x2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include media-initial {
+    max-width: 400px;
+  }
+  @include media-desktop {
+    max-width: 879px;
+  }
+}
