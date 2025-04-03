@@ -1,0 +1,22 @@
+@use '@/shared/mixins' as *;
+
+.ContactsImage {
+  flex-shrink: 0;
+  aspect-ratio: 880 / 847;
+  width: 100%;
+  background-image: url('/leadconveer/images/contacts-x2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include media-initial {
+    max-width: 400px;
+    border-radius: 20px;
+  }
+  @include media-desktop {
+    max-width: 600px;
+  }
+  @include media-fullHD {
+    max-width: 880px;
+    border-radius: 60px;
+  }
+}

@@ -1,0 +1,15 @@
+@use '@/shared/mixins' as *;
+
+.ContactsInfo {
+  display: flex;
+  flex-direction: column;
+  @include media-initial {
+    padding: 20px;
+  }
+  @include media-tablet {
+    padding: 40px;
+  }
+  @include media-desktop {
+    padding: 82px 60px 80px 80px;
+  }
+}

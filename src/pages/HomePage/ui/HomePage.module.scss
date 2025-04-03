@@ -126,4 +126,13 @@
       padding-top: 90px;
     }
   }
+
+  &__Contacts {
+    @include media-initial {
+      padding-top: 40px;
+    }
+    @include media-desktop {
+      padding-top: 120px;
+    }
+  }
 }

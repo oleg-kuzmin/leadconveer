@@ -1,0 +1,1 @@
+export { ContactsImage } from './ContactsImage';

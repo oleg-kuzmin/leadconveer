@@ -1,0 +1,7 @@
+@use '@/shared/mixins' as *;
+
+.ContactsAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}

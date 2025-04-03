@@ -1,0 +1,18 @@
+@use '@/shared/mixins' as *;
+
+.AddressElement {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include media-initial {
+    @include font-figma-H3(16px);
+    @include font-apadtive-size(16, 32, 320, 1440);
+  }
+  @include media-desktop {
+    @include font-figma-H3;
+  }
+
+  &__Title {
+    color: var(--grey);
+  }
+}

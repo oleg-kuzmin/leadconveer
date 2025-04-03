@@ -1,6 +1,7 @@
 import { AdditionalServices } from '@/widgets/AdditionalServices';
 import { Advantages } from '@/widgets/Advantages';
 import { Clients } from '@/widgets/Clients';
+import { Contacts } from '@/widgets/Contacts';
 import { Faq } from '@/widgets/Faq';
 import { Features } from '@/widgets/Features';
 import { Header } from '@/widgets/Header';
@@ -34,8 +35,8 @@ export function HomePage() {
         <RegistrationSecond className={styles.HomePage__RegistrationSecond} />
         <Faq className={styles.HomePage__Faq} />
         <NewEra className={styles.HomePage__NewEra} />
+        <Contacts className={styles.HomePage__Contacts} />
       </main>
-      {/* <Contacts /> */}
       {/* <Footer /> */}
     </>
   );

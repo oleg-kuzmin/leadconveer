@@ -1,0 +1,16 @@
+@use '@/shared/mixins' as *;
+
+.Contacts {
+  &__Title {
+    margin-bottom: 20px;
+  }
+
+  &__Subtitle {
+    @include media-initial {
+      margin-bottom: 20px;
+    }
+    @include media-desktop {
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 export { AccentText } from './AccentText';
+export { ContactLink } from './ContactLink';
 export { Content } from './Content';
 export { MainButton } from './MainButton';
 export { SectionSubtitle } from './SectionSubtitle';

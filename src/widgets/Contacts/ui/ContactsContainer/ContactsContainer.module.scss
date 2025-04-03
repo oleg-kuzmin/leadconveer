@@ -1,0 +1,20 @@
+@use '@/shared/mixins' as *;
+
+.ContactsContainer {
+  display: flex;
+  background-color: var(--light-grey);
+  @include media-initial {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+  }
+  @include media-desktop {
+    flex-direction: row;
+    gap: 0;
+    border-radius: 60px;
+  }
+  @include media-fullHD {
+    align-items: flex-start;
+  }
+}
