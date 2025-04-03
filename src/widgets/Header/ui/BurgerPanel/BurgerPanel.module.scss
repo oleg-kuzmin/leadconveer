@@ -1,0 +1,44 @@
+@use '@/shared/mixins' as *;
+
+.BurgerPanel {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: translateY(-110%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  backdrop-filter: blur(10px);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow:
+    2px 2px 8px var(--black),
+    -2px -2px 8px var(--black);
+  color: var(--white);
+  transition: transform var(--time-burger) ease-in-out;
+  &_Active {
+    transform: translateY(0);
+  }
+
+  &__List {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  &__Link {
+    @include effect-focus-blueberry;
+    @include media-initial {
+      @include font-figma-H3(16px);
+      @include font-apadtive-size(16, 32, 320, 1440);
+    }
+    @include media-desktop {
+      @include font-figma-H3;
+    }
+  }
+}

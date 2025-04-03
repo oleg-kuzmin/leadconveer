@@ -1,17 +1,15 @@
 @use '@/shared/mixins' as *;
 
 .Header {
-  position: relative;
+  z-index: 2;
   width: 100%;
   background-color: var(--dark-grey);
-  &::after {
-    z-index: -1;
-    position: absolute;
+  @include media-initial {
+    position: sticky;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--light-grey);
-    content: '';
+  }
+  @include media-laptop {
+    position: relative;
   }
   @include media-fullHD {
     border-bottom-right-radius: 40px;
@@ -34,6 +32,12 @@
   }
 
   &__ButtonBurger {
+    @include media-laptop {
+      display: none;
+    }
+  }
+
+  &__BurgerPanel {
     @include media-laptop {
       display: none;
     }

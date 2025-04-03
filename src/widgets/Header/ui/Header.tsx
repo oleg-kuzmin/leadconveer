@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import cn from 'classnames';
 import { Content } from '@/shared/ui';
+import { BurgerPanel } from './BurgerPanel';
 import { Contacts } from './Contacts';
 import { ElementButtonBurger } from './ElementButtonBurger';
 import { ElementLogo } from './ElementLogo';
@@ -14,19 +15,20 @@ interface HeaderProps {
 }
 
 export function Header({ className }: Readonly<HeaderProps>) {
-  const [isActiveBurgerMenu, setIsActiveBurgerMenu] = useState(false);
+  const [isActiveBurgerPanel, setIsActiveBurgerPanel] = useState(false);
 
   const handleClickBurgerMenu = () => {
-    setIsActiveBurgerMenu(!isActiveBurgerMenu);
+    setIsActiveBurgerPanel(!isActiveBurgerPanel);
   };
 
   return (
     <header className={cn(styles.Header, className)}>
       <Content className={styles.Header__Content}>
+        <BurgerPanel className={styles.Header__BurgerPanel} isActive={isActiveBurgerPanel} />
         <ElementLogo className={styles.Header__Logo} />
         <ElementButtonBurger
           className={styles.Header__ButtonBurger}
-          isActive={isActiveBurgerMenu}
+          isActive={isActiveBurgerPanel}
           onClick={handleClickBurgerMenu}
         />
         <Navigation className={styles.Header__Navigation} />

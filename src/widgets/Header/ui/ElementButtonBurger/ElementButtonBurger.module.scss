@@ -2,12 +2,14 @@
 
 .ElementButtonBurger {
   display: flex;
+  z-index: 3;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 36px;
   height: 36px;
   gap: 5px;
+  @include effect-focus-blueberry;
 
   &__Line {
     width: 26px;
