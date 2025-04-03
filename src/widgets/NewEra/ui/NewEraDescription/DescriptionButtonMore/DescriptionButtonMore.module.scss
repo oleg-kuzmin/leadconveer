@@ -1,0 +1,20 @@
+@use '@/shared/mixins' as *;
+
+.DescriptionButtonMore {
+  width: max-content;
+  color: var(--grey);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color var(--time-hover);
+  @include media-initial {
+    @include font-regular(16px);
+  }
+  @include media-desktop {
+    @include font-regular(24px);
+  }
+  @media screen and (hover: hover) {
+    &:hover {
+      color: var(--dark-grey);
+    }
+  }
+}

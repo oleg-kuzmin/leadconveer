@@ -1,0 +1,16 @@
+@use '@/shared/mixins' as *;
+
+.BuyIcon {
+  background-image: url('/leadconveer/svg/rocket.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include media-initial {
+    width: 36px;
+    height: 36px;
+  }
+  @include media-desktop {
+    width: 72px;
+    height: 72px;
+  }
+}

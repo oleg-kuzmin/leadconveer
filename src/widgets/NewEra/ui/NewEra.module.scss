@@ -1,0 +1,17 @@
+@use '@/shared/mixins' as *;
+
+.NewEra {
+  &__Content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    @include media-initial {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media-desktop {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@use '@/shared/mixins' as *;
+
+.NewEraDescription {
+  position: relative;
+  width: 100%;
+  max-width: 731px;
+
+  &__Star {
+    position: absolute;
+    @include media-initial {
+      top: -40px;
+      right: 0px;
+      width: 28px;
+      height: 28px;
+    }
+    @include media-desktop {
+      top: -57px;
+      width: 57px;
+      height: 57px;
+    }
+    @include media-fullHD {
+      top: -5px;
+      right: -76px;
+    }
+  }
+
+  &__ButtonMore {
+    @include media-initial {
+      margin-top: 20px;
+    }
+    @include media-desktop {
+      margin-top: 33px;
+    }
+  }
+}

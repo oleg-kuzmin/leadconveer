@@ -36,7 +36,7 @@
 
   &__Button {
     @include media-initial {
-      max-width: 300px;
+      max-width: 500px;
     }
     @include media-desktop {
       max-width: revert;

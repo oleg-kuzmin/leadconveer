@@ -1,0 +1,35 @@
+@use '@/shared/mixins' as *;
+
+.NewEraBuy {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include media-initial {
+    align-items: center;
+    max-width: 500px;
+  }
+  @include media-desktop {
+    align-items: flex-start;
+    max-width: 690px;
+  }
+
+  &__Title {
+    max-width: 561px;
+    text-align: left;
+    @include media-initial {
+      margin-bottom: 20px;
+    }
+    @include media-desktop {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__Icon {
+    @include media-initial {
+      margin-bottom: 20px;
+    }
+    @include media-desktop {
+      margin-bottom: 59px;
+    }
+  }
+}

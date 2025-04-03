@@ -1,0 +1,1 @@
+export { BuyIcon } from './BuyIcon';

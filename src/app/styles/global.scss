@@ -25,6 +25,7 @@
 }
 
 body {
+  min-height: 200vh; //! delete
   margin: 0 auto;
   background-color: var(--white);
   color: var(--dark-grey);
