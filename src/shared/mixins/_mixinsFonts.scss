@@ -6,6 +6,9 @@
   );
 }
 
+// Inter 400 700 600
+// Montserrat 700
+
 // Figma mixins
 @mixin font-figma-H1($_fontSize: 80px, $_lineHeight: 100%) {
   font-weight: 700;
@@ -50,40 +53,8 @@
 }
 
 // Weight mixins
-@mixin font-black($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 900;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}
-
-@mixin font-extrabold($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 800;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}
-
 @mixin font-bold($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
   font-weight: 700;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}
-
-@mixin font-semibold($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 600;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}
-
-@mixin font-medium($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 500;
   font-size: $_fontSize;
   line-height: $_lineHeight;
   font-family: $_fontFamily;
@@ -98,26 +69,3 @@
   letter-spacing: $_letterSpacing;
 }
 
-@mixin font-light($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 300;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}
-
-@mixin font-extraLight($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 200;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}
-
-@mixin font-thin($_fontSize, $_lineHeight: 100%, $_fontFamily: 'Inter', $_letterSpacing: normal) {
-  font-weight: 100;
-  font-size: $_fontSize;
-  line-height: $_lineHeight;
-  font-family: $_fontFamily;
-  letter-spacing: $_letterSpacing;
-}

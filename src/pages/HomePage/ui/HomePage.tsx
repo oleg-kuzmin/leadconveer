@@ -22,7 +22,7 @@ export function HomePage() {
     <>
       <Header />
       <main>
-        {/* <Hero className={styles.HomePage__Hero} />
+        <Hero className={styles.HomePage__Hero} />
         <Advantages className={styles.HomePage__Advantages} />
         <PricingPlans className={styles.HomePage__PricingPlans} />
         <AdditionalServices className={styles.HomePage__AdditionalServices} />
@@ -35,7 +35,7 @@ export function HomePage() {
         <Features className={styles.HomePage__Features} />
         <RegistrationSecond className={styles.HomePage__RegistrationSecond} />
         <Faq className={styles.HomePage__Faq} />
-        <NewEra className={styles.HomePage__NewEra} /> */}
+        <NewEra className={styles.HomePage__NewEra} />
         <Contacts className={styles.HomePage__Contacts} />
       </main>
       <Footer className={styles.HomePage__Footer} />
