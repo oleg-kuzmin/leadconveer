@@ -54,6 +54,7 @@ export function Video({ src, type, poster, width, height, className }: Readonly<
         onEnded={noPlayedVideo}
         onPause={noPlayedVideo}>
         <source src={src} type={type} />
+        <track default kind="captions" label="Русские субтитры" srcLang="ru" src="/leadconveer/video/video.vtt" />
         Ваш браузер не поддерживает воспроизведение видео.
       </video>
       {!isPlayed && buttonPlay}

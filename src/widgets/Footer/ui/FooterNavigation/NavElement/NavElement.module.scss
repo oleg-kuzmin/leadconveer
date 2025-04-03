@@ -13,6 +13,7 @@
 
   &__Link {
     @include effect-focus-blueberry;
+    @include effect-hover-text-grey;
   }
 
   &__Br {
