@@ -11,6 +11,10 @@
     @include font-regular(20px);
   }
 
+  &__Link {
+    @include effect-focus-blueberry;
+  }
+
   &__Br {
     display: none;
     @include media-desktop {

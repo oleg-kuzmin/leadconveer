@@ -9,15 +9,13 @@
   color: var(--white);
   text-transform: uppercase;
   cursor: pointer;
-  @include effect-hover-MainButton;
-  @include effect-focus-MainButton;
+  @include effect-MainButton;
 
   @include media-initial {
     height: 50px;
     border-radius: 10px;
     @include font-figma-button(16px);
   }
-
   @include media-desktop {
     height: 72px;
     border-radius: 20px;

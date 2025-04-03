@@ -3,6 +3,6 @@
 .ElementNavLink {
   color: var(--white);
   @include font-figma-txt;
-  @include effect-hover-ElementNavLink;
-  @include effect-focus-ElementNavLink;
+  @include effect-focus-blueberry;
+  @include effect-hover-text-grey;
 }

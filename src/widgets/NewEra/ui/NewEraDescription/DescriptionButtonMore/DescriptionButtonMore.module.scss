@@ -6,6 +6,7 @@
   text-decoration: underline;
   cursor: pointer;
   transition: color var(--time-hover);
+  @include effect-focus-blueberry;
   @include media-initial {
     @include font-regular(16px);
   }

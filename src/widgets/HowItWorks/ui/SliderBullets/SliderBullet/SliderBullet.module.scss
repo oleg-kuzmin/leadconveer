@@ -5,6 +5,8 @@
   background-color: #dbdbdb;
   cursor: pointer;
   transition: background-color var(--time-hover);
+  @include effect-focus-SliderBullet;
+
   @include media-initial {
     width: 15px;
     height: 15px;

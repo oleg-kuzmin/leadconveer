@@ -28,14 +28,7 @@ export function Video({ src, type, poster, width, height, className }: Readonly<
     }
   };
 
-  const endVideo = () => {
-    if (videoRef.current) {
-      setIsPlayed(false);
-      videoRef.current.controls = false;
-    }
-  };
-
-  const pauseVideo = () => {
+  const noPlayedVideo = () => {
     if (videoRef.current) {
       setIsPlayed(false);
       videoRef.current.controls = false;
@@ -50,7 +43,7 @@ export function Video({ src, type, poster, width, height, className }: Readonly<
   );
 
   return (
-    <div className={cn(styles.Video, className)} onClick={handlePlayVideo} style={{ maxWidth: `${width}px` }}>
+    <div className={cn(styles.Video, className)} style={{ maxWidth: `${width}px` }}>
       <video
         className={styles.Video__Item}
         style={{ aspectRatio: `${width}/${height}` }}
@@ -58,8 +51,8 @@ export function Video({ src, type, poster, width, height, className }: Readonly<
         poster={poster}
         ref={videoRef}
         onPlay={playVideo}
-        onEnded={endVideo}
-        onPause={pauseVideo}>
+        onEnded={noPlayedVideo}
+        onPause={noPlayedVideo}>
         <source src={src} type={type} />
         Ваш браузер не поддерживает воспроизведение видео.
       </video>

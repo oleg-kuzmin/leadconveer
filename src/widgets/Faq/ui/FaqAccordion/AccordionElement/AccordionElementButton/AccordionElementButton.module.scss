@@ -23,6 +23,14 @@
     border-radius: 30px;
     @include font-figma-txt;
   }
+  &:focus-visible {
+    border-color: var(--orange-juice);
+    outline: none;
+  }
+  &:focus-visible .AccordionElementButton__Icon path {
+    stroke: var(--orange-juice);
+  }
+
   @media screen and (hover: hover) {
     &:hover:not(.AccordionElementButton_Active) {
       border-color: var(--orange-juice);

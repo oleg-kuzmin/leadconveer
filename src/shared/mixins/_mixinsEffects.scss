@@ -1,55 +1,52 @@
-// @mixin effect-focus {
-//   &:focus-visible {
-//     border-radius: 2px;
-//     outline: var(--white) 2px solid;
-//   }
-// }
+@mixin effect-focus-orange {
+  &:focus-visible {
+    border-radius: 2px;
+    outline: var(--orange-juice) 2px solid;
+  }
+}
 
-// @mixin effect-hover {
-//   @media screen and (hover: hover) {
-//     transition: color var(--time-hover);
-//     &:hover {
-//       color: var(--white);
-//     }
-//   }
-// }
+@mixin effect-focus-blueberry {
+  &:focus-visible {
+    border-radius: 2px;
+    outline: var(--blueberry) 2px solid;
+  }
+}
 
-// @mixin effect-hover-NavLinkElement {
-//   transition: color var(--time-hover);
-//   @media screen and (hover: hover) {
-//     &:hover {
-//       color: var(--grey2);
-//     }
-//   }
-// }
+@mixin effect-focus-SliderBullet {
+  &:focus-visible {
+    outline: var(--blueberry) 2px solid;
+  }
+}
 
-// @mixin effect-hover-MainButtonElement {
-//   transition: background-color var(--time-hover);
-//   &:active {
-//     background-color: var(--dark-orange);
-//   }
-//   @media screen and (hover: hover) {
-//     &:hover {
-//       background-color: var(--light-orange);
-//     }
-//     &:active {
-//       background-color: var(--dark-orange);
-//     }
-//   }
-// }
+@mixin effect-hover-text-grey {
+  @media screen and (hover: hover) {
+    transition: color var(--time-hover);
+    &:hover {
+      color: var(--grey2);
+    }
+  }
+}
 
-// @mixin effect-hover-VideoButtonElement {
-//   @media screen and (hover: hover) {
-//     transition: opacity var(--time-hover);
-//     &:hover {
-//       opacity: 0.7;
-//     }
-//   }
-// }
+@mixin effect-hover-ContactLink {
+  @media screen and (hover: hover) {
+    transition: opacity var(--time-hover);
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
 
-@mixin effect-hover-ElementNavLink {};
-@mixin effect-focus-ElementNavLink {};
-@mixin effect-hover-MainButton {};
-@mixin effect-focus-MainButton {};
-@mixin effect-hover-ContactLinkElement {};
-@mixin effect-focus-ContactLinkElement {};
+@mixin effect-MainButton {
+  transition: background-color var(--time-hover);
+  &:active {
+    background-color: var(--dark-orange);
+  }
+  &:focus-visible {
+    outline: var(--blueberry) 3px solid;
+  }
+  @media screen and (hover: hover) {
+    &:hover {
+      background-color: var(--light-orange);
+    }
+  }
+}

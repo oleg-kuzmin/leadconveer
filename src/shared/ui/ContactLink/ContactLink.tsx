@@ -21,5 +21,5 @@ export function ContactLink({ href, icon, className }: Readonly<ContactLinkProps
       throw Error('ContactLink: unknown icon.');
   }
 
-  return <a className={cn(styles.ContactLink, classIcon, className)} href={href}></a>;
+  return <a className={cn(styles.ContactLink, classIcon, className)} href={href}>Перейти по ссылке</a>;
 }

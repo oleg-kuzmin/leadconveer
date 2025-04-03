@@ -9,7 +9,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
+  font-size: 0;
   vertical-align: top;
+  @include effect-hover-ContactLink;
+  @include effect-focus-blueberry;
 
   &_Whatsapp {
     background-image: url('/leadconveer/svg/whatsapp-icon.svg');

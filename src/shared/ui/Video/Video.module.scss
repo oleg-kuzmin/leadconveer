@@ -3,7 +3,6 @@
 .Video {
   position: relative;
   width: 100%;
-  cursor: pointer;
 
   &__Item {
     width: 100%;
@@ -29,5 +28,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+    @include effect-focus-blueberry;
   }
 }
