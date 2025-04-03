@@ -1,0 +1,12 @@
+@use '@/shared/mixins' as *;
+
+.FooterPerson {
+  color: var(--white);
+  text-align: center;
+  @include media-initial {
+    @include font-figma-txt(16px);
+  }
+  @include media-desktop {
+    @include font-figma-txt;
+  }
+}

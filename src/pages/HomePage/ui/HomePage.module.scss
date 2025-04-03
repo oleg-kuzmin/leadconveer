@@ -3,136 +3,145 @@
 .HomePage {
   &__Hero {
     @include media-initial {
-      padding-top: 30px;
+      margin-top: 30px;
     }
     @include media-desktop {
-      padding-top: 60px;
+      margin-top: 60px;
     }
   }
 
   &__Advantages {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 126px;
+      margin-top: 126px;
     }
   }
 
   &__PricingPlans {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__AdditionalServices {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 111px;
+      margin-top: 111px;
     }
   }
 
   &__Clients {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__Reviews {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__LeadTechnology {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 120px;
+      margin-top: 120px;
     }
   }
 
   &__RegistrationFirst {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__HowItWorks {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__Presentation {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__Features {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 119px;
+      margin-top: 119px;
     }
   }
 
   &__RegistrationSecond {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 120px;
+      margin-top: 120px;
     }
   }
 
   &__Faq {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 121px;
+      margin-top: 121px;
     }
   }
 
   &__NewEra {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 90px;
+      margin-top: 90px;
     }
   }
 
   &__Contacts {
     @include media-initial {
-      padding-top: 40px;
+      margin-top: 40px;
     }
     @include media-desktop {
-      padding-top: 120px;
+      margin-top: 120px;
+    }
+  }
+
+  &__Footer {
+    @include media-initial {
+      margin-top: 40px;
+    }
+    @include media-desktop {
+      margin-top: 119px;
     }
   }
 }

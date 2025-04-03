@@ -1,0 +1,14 @@
+@use '@/shared/mixins' as *;
+
+.FooterNavigation {
+  display: flex;
+  justify-content: center;
+  @include media-initial {
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include media-desktop {
+    flex-direction: row;
+    gap: 2px;
+  }
+}

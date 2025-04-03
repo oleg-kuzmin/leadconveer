@@ -1,0 +1,20 @@
+@use '@/shared/mixins' as *;
+
+.NavElement {
+  color: var(--grey);
+  @include media-initial {
+    text-decoration: underline;
+    @include font-regular(16px);
+  }
+  @include media-desktop {
+    text-decoration: none;
+    @include font-regular(20px);
+  }
+
+  &__Br {
+    display: none;
+    @include media-desktop {
+      display: revert;
+    }
+  }
+}

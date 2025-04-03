@@ -1,0 +1,32 @@
+@use '@/shared/mixins' as *;
+
+.Footer {
+  width: 100%;
+  background-color: var(--dark-grey);
+  @include media-fullHD {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+
+  &__Copyright {
+    @include media-initial {
+      padding: 20px 0;
+    }
+    @include media-desktop {
+      padding: 81px 0 19px;
+    }
+  }
+
+  &__Person {
+    padding-bottom: 42px;
+  }
+
+  &__Navigation {
+    @include media-initial {
+      padding-bottom: 40px;
+    }
+    @include media-desktop {
+      padding-bottom: 82px;
+    }
+  }
+}
