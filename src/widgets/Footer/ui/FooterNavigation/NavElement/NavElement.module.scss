@@ -20,6 +20,7 @@
     display: none;
     @include media-desktop {
       display: revert;
+      color: var(--grey);
     }
   }
 }

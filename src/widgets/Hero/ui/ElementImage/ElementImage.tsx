@@ -10,7 +10,7 @@ export function ElementImage({ className }: Readonly<ElementImageProps>) {
   return (
     <Image
       className={cn(styles.ElementImage, className)}
-      src="/leadconveer/images/hero-image-x2.png"
+      src="/leadconveer/images/hero-image-x1.png"
       alt="Девушка за ноутбуком"
       width={791}
       height={497}

@@ -1,6 +1,6 @@
 {
   "name": "leadconveer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "explorer http://localhost:3000/leadconveer & next dev",
