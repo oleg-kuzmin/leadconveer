@@ -22,4 +22,4 @@
 ## Ссылки
 
 - [Figma](https://www.figma.com/design/yL9tV4s0ZZAmBksnR79yWV/Work?node-id=5-70&t=2pzTApqAraH4fYgj-1)
-- [Vercel Pages](https://oleg-kuzmin.github.io/leadconveer)
+- [Github Pages](https://oleg-kuzmin.github.io/leadconveer)
