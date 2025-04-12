@@ -17,7 +17,7 @@ import { RegistrationSecond } from '@/widgets/RegistrationSecond';
 import { Reviews } from '@/widgets/Reviews';
 import styles from './HomePage.module.scss';
 
-export function HomePage() {
+export default function HomePage() {
   return (
     <>
       <Header />
