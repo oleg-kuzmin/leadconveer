@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'LEADCONVEER',
+  title: 'Leadconveer',
   description: 'лиды для вашего бизнеса',
+  manifest: `/leadconveer/manifest.json`,
 };
 
 export default function RootLayout({
@@ -12,6 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Oleg K." />
+      </head>
       <body>{children}</body>
     </html>
   );
