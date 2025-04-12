@@ -11,16 +11,16 @@ export function Navigation({ className }: Readonly<NavigationProps>) {
     <nav className={cn(styles.Navigation, className)}>
       <ul className={styles.Navigation__List}>
         <li>
-          <ElementNavLink href="#" text="Как это работает" />
+          <ElementNavLink href="#howItWorks" text="Как это работает" />
         </li>
         <li>
-          <ElementNavLink href="#" text="Цена" />
+          <ElementNavLink href="#pricingPlans" text="Цена" />
         </li>
         <li>
-          <ElementNavLink href="#" text="Отзывы" />
+          <ElementNavLink href="#reviews" text="Отзывы" />
         </li>
         <li>
-          <ElementNavLink href="#" text="Контакты" />
+          <ElementNavLink href="#contacts" text="Контакты" />
         </li>
       </ul>
     </nav>

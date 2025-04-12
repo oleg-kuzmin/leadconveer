@@ -1,6 +1,13 @@
 @use '@/shared/mixins' as *;
 
 .HowItWorks {
+  @include media-initial {
+    scroll-margin-top: 122px;
+  }
+  @include media-laptop {
+    scroll-margin-top: 40px;
+  }
+
   &__Title {
     @include media-initial {
       padding: 20px 0;

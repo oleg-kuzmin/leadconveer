@@ -66,7 +66,7 @@ export function HowItWorks({ className }: Readonly<HowItWorksProps>) {
   };
 
   return (
-    <section className={cn(styles.HowItWorks, className)}>
+    <section className={cn(styles.HowItWorks, className)} id="howItWorks">
       <Content>
         <HowContainer>
           <SectionTitle className={styles.HowItWorks__Title}>Как это работает?</SectionTitle>

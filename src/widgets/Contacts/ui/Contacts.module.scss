@@ -1,6 +1,13 @@
 @use '@/shared/mixins' as *;
 
 .Contacts {
+  @include media-initial {
+    scroll-margin-top: 122px;
+  }
+  @include media-laptop {
+    scroll-margin-top: 40px;
+  }
+
   &__Title {
     margin-bottom: 20px;
   }

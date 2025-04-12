@@ -9,7 +9,7 @@ interface PricingPlansProps {
 
 export function PricingPlans({ className }: Readonly<PricingPlansProps>) {
   return (
-    <section className={cn(styles.PricingPlans, className)}>
+    <section className={cn(styles.PricingPlans, className)} id="pricingPlans">
       <Content className={styles.PricingPlans__Content}>
         <SectionTitle className={styles.PricingPlans__Title}>
           Стоимость технологий <AccentText>«Лид&nbsp;Конвейер»</AccentText>

@@ -10,7 +10,7 @@ interface ReviewsProps {
 
 export function Reviews({ className }: Readonly<ReviewsProps>) {
   return (
-    <section className={cn(styles.Reviews, className)}>
+    <section className={cn(styles.Reviews, className)} id="reviews">
       <Content className={styles.Reviews__Content}>
         <SectionTitle className={styles.Reviews__Title}>Отзывы клиентов</SectionTitle>
         <SectionSubtitle className={styles.Reviews__Subtitle}>

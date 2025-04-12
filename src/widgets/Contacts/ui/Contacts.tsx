@@ -14,7 +14,7 @@ interface ContactsProps {
 
 export function Contacts({ className }: Readonly<ContactsProps>) {
   return (
-    <section className={cn(styles.Contacts, className)}>
+    <section className={cn(styles.Contacts, className)} id="contacts">
       <Content>
         <ContactsContainer>
           <ContactsInfo>

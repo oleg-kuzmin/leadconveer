@@ -24,7 +24,11 @@ export function Header({ className }: Readonly<HeaderProps>) {
   return (
     <header className={cn(styles.Header, className)}>
       <Content className={styles.Header__Content}>
-        <BurgerPanel className={styles.Header__BurgerPanel} isActive={isActiveBurgerPanel} />
+        <BurgerPanel
+          className={styles.Header__BurgerPanel}
+          isActive={isActiveBurgerPanel}
+          onClick={handleClickBurgerMenu}
+        />
         <ElementLogo className={styles.Header__Logo} />
         <ElementButtonBurger
           className={styles.Header__ButtonBurger}
