@@ -14,6 +14,7 @@ export function ElementImage({ className }: Readonly<ElementImageProps>) {
       alt="Девушка за ноутбуком"
       width={791}
       height={497}
+      priority={true}
     />
   );
 }

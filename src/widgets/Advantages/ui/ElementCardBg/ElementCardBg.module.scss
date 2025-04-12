@@ -1,7 +1,7 @@
 @use '@/shared/mixins' as *;
 
 .ElementCardBg {
-  background-image: url('/leadconveer/images/advantages-bg-x1.png');
+  background-image: url('/leadconveer/images/advantages-bg-x1-optimized.png');
   background-size: cover;
   background-repeat: no-repeat;
   @include media-initial {
